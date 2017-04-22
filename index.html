@@ -2,94 +2,122 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Седона - главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <ul class="main-nav">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
-        <li><img src="http://placehold.it/20x20" class="logo" alt="logo"></li>
+        <li><a href="index.html"><img src="img/logo.png" class="logo" width="138" height="70" alt="Логотип"></a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </header>
     <main class="main-block">
-      <img src="http://placehold.it/1920x1080" class="main-pic" alt="Grand-Canyon sucks!">
+      <img src="img/mountains.jpg" class="main-pic" width="1200" height="773" alt="Grand-Canyon sucks!">
       <div class="about-sedona">
-        <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <h3 class="for-h3">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="bar-one">
           <section class="reasons blue">
-            <h3>Настоящий городок</h3>
+            <h3 class="for-h3">Настоящий городок</h3>
             <p> - №1 -</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </section>
-          <img src="http://placehold.it/700x150" class="bar-one-pic" alt="Beautiful Sedona">
+          <img src="img/reasons-first-bar.jpg" class="bar-one-pic" width="800" height="256" alt="Beautiful Sedona">
         </div>
         <div class="reasons white">
-          <section>
+          <div>
             <img src="http://placehold.it/20x30" class="mini-pic" alt="Дом">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </section>
-          <section>
+            <div>
+              <h3 class="for-h3">Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+          </div>
+          <div>
             <img src="http://placehold.it/20x30" class="mini-pic" alt="Бургер">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </section>
-          <section>
+            <div>
+              <h3 class="for-h3">Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </div>
+          <div>
             <img src="http://placehold.it/20x30" class="mini-pic" alt="Коробка">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </section>
+            <div>
+              <h3 class="for-h3">Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
         </div>
         <div class="bar-two">
-          <img src="http://placehold.it/700x150" class="bar-two-pic" alt="Beautiful Sedona again">
+          <img src="img/reasons-second-bar.jpg" class="bar-two-pic" width="800" height="256" alt="Beautiful Sedona again">
           <section class="reasons blue">
-            <h3>Там есть мост дьявола</h3>
+            <h3 class="for-h3">Там есть мост дьявола</h3>
             <p> - №2 -</p>
             <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
           </section>
         </div>
         <div class="reasons gray">
           <section>
-            <h3>Небольшая площадь</h3>
+            <h3 class="for-h3">Небольшая площадь</h3>
             <p> - №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </section>
           <section>
-            <h3>Красивая дорога</h3>
+            <h3 class="for-h3">Красивая дорога</h3>
             <p> - №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </section>
           <section>
-            <h3>Мало туристов</h3>
+            <h3 class="for-h3">Мало туристов</h3>
             <p> - №5 -</p>
             <p>Большинство едет в Гранд-Каньон и толпится там</p>
           </section>
         </div>
+      </div>
+      <div class="go-to-sedona">
         <div class="interested">
-          <h2>Заинтересовались?</h2>
+          <h2 class="for-h2">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="map">
-          <p>Тут должен быть Гугл Мапс</p>
+          <img src="img/map.jpg" class="map-pic" width="1200" height="593" alt="Седона на карте">
+        </div>
+        <div class="find-hotel">
+          <div class="find-hotel title">
+            <h3 class="for-h3">Поиск гостиницы в Седоне</h3>
+          </div>
+          <div class="find-hotel form">
+          <form action="#" method="get">
+            <div class="date-in">
+              <label> Дата заезда:
+              <input type="date" name="calendar-in">
+            </div>
+            <div class="date-out">
+              <label> Дата выезда:
+              <input type="date" name="calendar-out">
+            </div>
+            <div class="qty-adults">
+              <label for="adult">Взрослые: </label>
+              <input type="button" name="button-minus-adult">
+              <input type="text" name="qty-adult" id="adult" value="2">
+              <input type="button" name="button-plus-adult">
+            </div>
+            <div class="qty-childs">
+              <label for="child"> Дети: </label>
+              <input type="button" name="button-minus-child">
+              <input type="text" name="qty-child" id="child" value="0">
+              <input type="button" name="button-plus-adult">
+            </div>
+            <div class="find-it">
+              <input type="submit" value="Найти">
+            </div>
+          </form>
+          </div>
         </div>
       </div>
-      <article class="find-hotel">
-          <form action="#" method="get">
-          <section>
-            <h3>Поиск гостиницы в Седоне</h3>
-          </section>
-          <section>
-            <section>
-            <p>Как блин это делать? Как-то связать таблицу и формы?</p>
-            </section>
-            <input type="submit" value="НАЙТИ">
-          </section>
-          </form>
-      </article>
     </main>
     <footer class="main-footer">
       <div class="visit">
@@ -98,7 +126,7 @@
       <div class="links">
         <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="Twitter"></a>
         <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="Facebook"></a>
-        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="WTF is it?"></a>
+        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="YouTube"></a>
       </div>
       <div class="academy">
         <a href="https://htmlacademy.ru/"><img src="http://placehold.it/60x20" class="icon" alt="html academy"></a>

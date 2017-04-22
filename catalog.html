@@ -2,93 +2,121 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона - каталог</title>
+    <title>Седона - гостиницы</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <ul class="main-nav">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
-        <li><img src="http://placehold.it/20x20" class="logo" alt="logo"></li>
+        <li><a href="index.html"><img src="img/logo.png" width="138" height="70" class="logo" alt="Логотип"></a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </header>
     <main class="main-block">
       <div class="sort">
         <form action="#" method="post">
-          <section class="infrastructure">
-            <h3>Инфраструктура:</h3>
+          <div class="infrastructure">
+            <h3 class="for-h3">Инфраструктура:</h3>
             <input type="checkbox" name="infrastructure" id="swim">
             <label for="swim">Бассейн</label>
             <input type="checkbox" name="infrastructure" id="parking">
             <label for="parking">Парковка</label>
             <input type="checkbox" name="infrastructure" id="wifi">
             <label for="wifi">Wi-Fi</label>
-          </section>
-          <section class="housing-type">
-            <h3>Тип жилья:</h3>
+          </div>
+          <div class="housing-type">
+            <h3 class="for-h3">Тип жилья:</h3>
             <input type="checkbox" name="housing-type" id="hotel">
             <label for="hotel">Гостиница</label>
             <input type="checkbox" name="housing-type" id="motel">
             <label for="motel">Мотель</label>
             <input type="checkbox" name="housing-type" id="apartments">
             <label for="apartments">Апартаменты</label>
-          </section>
-          <section class="pricing">
-            <h3>Стоимость в сутки (Р):</h3>
-            <table border="1">
-              <tr>
-                <td>ОТ 0</td>
-                <td>ДО 3000</td>
-              </tr>
-            </table>
-            <p>Как сделать этот мазафакерский ползунок?</p>
-            <input type="submit" value="ПОКАЗАТЬ">
-          </section>
+          </div>
+          <div class="pricing">
+            <h3 class="for-h3">Стоимость в сутки (Р):</h3>
+            <div class="price-min">
+              <label>ОТ<input type="text" name="price-from" value="0"></label>
+            </div>
+            <div class="price-max">
+              <label>ДО<input type="text" name="price-to" value="3000"></label>
+            </div>
+            <div class="slider">
+              <input type="range" name="price-slider">
+            </div>
+            <div class="show">
+              <input type="submit" value="ПОКАЗАТЬ">
+            </div>
+          </div>
         </form>
       </div>
       <div class="results">
-        <div class="first-bar">
-          <p>
-            <h2>Найдено: 3<h2>
-            Сортировка:
-            <a href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По рейтингу</a>
-            <a href="#"><img src="http://placehold.it/3x3" name="triangle-up"></a>
-            <a href="#"><img src="http://placehold.it/3x3" name="triangle-down"></a>
-          </p>
+        <div class="before-not-a-table">
+          <div class="for-h2">Найдено: 3</div>
+          <ul class="sorting">
+            <li>Сортировка:</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          <div class="sorting-up-down">
+            <div class="sorting-up"><a href="#"><img src="http://placehold.it/3x3" name="triangle-up"></a></div>
+            <div class="sorting-down"><a href="#"><img src="http://placehold.it/3x3" name="triangle-down"></a></div>
+          </div>
         </div>
-        <table border="1">
-          <tr>
-            <td class="table-pic"><img src="http://placehold.it/100x60" name="amara-pic"></td>
-            <td class="about-hotel"><p><h2>Amara Resort & Spa</h2></p>
-              <p>Гостиница<span>от 3500 р.</span></p>
-              <button><a href="#">Подробнее</a></button>
-              <button><a href="#">Забронировать</a></button></td>
-            <td class="rate"><p><img src="http://placehold.it/100x20" name="stars"></p>
+        <div class="not-a-table">
+          <div class="hotels-bar">
+            <div class="table-pic">
+              <img src="http://placehold.it/100x60" name="amara-pic">
+            </div>
+            <div class="about-hotel">
+              <h2 class="for-h2">Amara Resort & Spa</h2>
+              <div class=details-hotel>Гостиница</div>
+              <div class="details-price">от 3500 р.</div>
+              <div class="details-details"><a href="#">Подробнее</a></div>
+              <div class="details-booking"><a href="#">Забронировать</a></div>
+            </div>
+            <div class="rating">
+              <div class="stars"><img src="http://placehold.it/100x20" name="four-stars"></div>
               <div class="rating-value">Рейтинг: 8,5</div>
-          </tr>
-          <tr>
-            <td class="table-pic"><img src="http://placehold.it/100x60" name="desert-pic"></td>
-            <td class="about-hotel"><p><h2>Desert Quail Inn</h2></p>
-              <p>Мотель<span>от 2000 р.</span></p>
-              <button><a href="#">Подробнее</a></button>
-              <button><a href="#">Забронировать</a></button></td>
-            <td class="rate"><p><img src="http://placehold.it/100x20" name="stars"></p>
+            </div>
+          </div>
+          <div class="hotels-bar">
+            <div class="table-pic">
+              <img src="http://placehold.it/100x60" name="desert-pic">
+            </div>
+            <div class="about-hotel">
+              <h2 class="for-h2">Desert Quail Inn</h2>
+              <div class=details-hotel>Мотель</div>
+              <div class="details-price">от 2000 р.</div>
+              <div class="details-details"><a href="#">Подробнее</a></div>
+              <div class="details-booking"><a href="#">Забронировать</a></div>
+            </div>
+            <div class="rating">
+              <div class="stars"><img src="http://placehold.it/100x20" name="two-stars"></div>
               <div class="rating-value">Рейтинг: 8,9</div>
-          </tr>
-          <tr>
-            <td class="table-pic"><img src="http://placehold.it/100x60" name="villas-pic"></td>
-            <td class="about-hotel"><p><h2>Villas at Poco Diablo</h2></p>
-              <p>Апартаменты<span>От 4000 р.</span></p>
-              <button><a href="#">Подробнее</a></button>
-              <button><a href="#">Забронировать</a></button></td>
-            <td class="rate"><p><img src="http://placehold.it/100x20" name="stars"></p>
+            </div>
+          </div>
+          <div class="hotels-bar">
+            <div class="table-pic">
+              <img src="http://placehold.it/100x60" name="villas-pic">
+            </div>
+            <div class="about-hotel">
+              <h2 class="for-h2">Villas at Poco Diablo</h2>
+              <div class=details-hotel>Апартаменты</div>
+              <div class="details-price">От 4000 р.</div>
+              <div class="details-details"><a href="#">Подробнее</a></div>
+              <div class="details-booking"><a href="#">Забронировать</a></div>
+            </div>
+            <div class="rating">
+              <div class="stars"><img src="http://placehold.it/100x20" name="three-stars"></div>
               <div class="rating-value">Рейтинг: 9,2</div>
-          </tr>
-        </table>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
@@ -98,7 +126,7 @@
       <div class="links">
         <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="Twitter"></a>
         <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="Facebook"></a>
-        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="WTF is it?"></a>
+        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="YouTube"></a>
       </div>
       <div class="academy">
         <a href="https://htmlacademy.ru/"><img src="http://placehold.it/60x20" class="icon" alt="html academy"></a>
