@@ -15,34 +15,48 @@
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </header>
-    <main class="main-block">
+    <main>
       <div class="sort">
         <form action="#" method="post">
           <div class="infrastructure">
-            <h3 class="for-h3">Инфраструктура:</h3>
-            <input type="checkbox" name="infrastructure" id="swim">
-            <label for="swim">Бассейн</label>
-            <input type="checkbox" name="infrastructure" id="parking">
-            <label for="parking">Парковка</label>
-            <input type="checkbox" name="infrastructure" id="wifi">
-            <label for="wifi">Wi-Fi</label>
+            <h3 class="infrastructure title">Инфраструктура:</h3>
+            <div class="infrastructure form-group">
+              <input type="checkbox" name="infrastructure" id="swim">
+              <label for="swim">Бассейн</label>
+            </div>
+            <div class="infrastructure form-group">
+              <input type="checkbox" name="infrastructure" id="parking">
+              <label for="parking">Парковка</label>
+            </div>
+            <div class="infrastructure form-group">
+              <input type="checkbox" name="infrastructure" id="wifi">
+              <label for="wifi">Wi-Fi</label>
+            </div>
           </div>
           <div class="housing-type">
-            <h3 class="for-h3">Тип жилья:</h3>
-            <input type="checkbox" name="housing-type" id="hotel">
-            <label for="hotel">Гостиница</label>
-            <input type="checkbox" name="housing-type" id="motel">
-            <label for="motel">Мотель</label>
-            <input type="checkbox" name="housing-type" id="apartments">
-            <label for="apartments">Апартаменты</label>
+            <h3 class="housing-type title">Тип жилья:</h3>
+            <div class="housing-type form-group">
+              <input type="checkbox" name="housing-type" id="hotel">
+              <label for="hotel">Гостиница</label>
+            </div>
+            <div class="housing-type form-group">
+              <input type="checkbox" name="housing-type" id="motel">
+              <label for="motel">Мотель</label>
+            </div>
+            <div class="housing-type form-group">
+              <input type="checkbox" name="housing-type" id="apartments">
+              <label for="apartments">Апартаменты</label>
+            </div>
           </div>
           <div class="pricing">
-            <h3 class="for-h3">Стоимость в сутки (Р):</h3>
-            <div class="price-min">
-              <label>ОТ<input type="text" name="price-from" value="0"></label>
+            <h3 class="pricing title">Стоимость в сутки (Р):</h3>
+            <div class="price-min form-group">
+              <label for="price-from">ОТ </label>
+                <input type="text" name="price-from" id="price-from" value="0">
             </div>
-            <div class="price-max">
-              <label>ДО<input type="text" name="price-to" value="3000"></label>
+            <div class="price-max form-group">
+              <label for="price-to">ДО </label>
+                <input type="text" name="price-to" id="price-to" value="3000">
             </div>
             <div class="slider">
               <input type="range" name="price-slider">
@@ -55,7 +69,7 @@
       </div>
       <div class="results">
         <div class="before-not-a-table">
-          <div class="for-h2">Найдено: 3</div>
+          <div class="results title">Найдено: 3</div>
           <ul class="sorting">
             <li>Сортировка:</li>
             <li><a href="#">По цене</a></li>
@@ -73,7 +87,7 @@
               <img src="http://placehold.it/100x60" name="amara-pic">
             </div>
             <div class="about-hotel">
-              <h2 class="for-h2">Amara Resort & Spa</h2>
+              <h2 class="about-hotel title">Amara Resort & Spa</h2>
               <div class=details-hotel>Гостиница</div>
               <div class="details-price">от 3500 р.</div>
               <div class="details-details"><a href="#">Подробнее</a></div>
@@ -89,7 +103,7 @@
               <img src="http://placehold.it/100x60" name="desert-pic">
             </div>
             <div class="about-hotel">
-              <h2 class="for-h2">Desert Quail Inn</h2>
+              <h2 class="about-hotel title">Desert Quail Inn</h2>
               <div class=details-hotel>Мотель</div>
               <div class="details-price">от 2000 р.</div>
               <div class="details-details"><a href="#">Подробнее</a></div>
@@ -105,7 +119,7 @@
               <img src="http://placehold.it/100x60" name="villas-pic">
             </div>
             <div class="about-hotel">
-              <h2 class="for-h2">Villas at Poco Diablo</h2>
+              <h2 class="about-hotel title">Villas at Poco Diablo</h2>
               <div class=details-hotel>Апартаменты</div>
               <div class="details-price">От 4000 р.</div>
               <div class="details-details"><a href="#">Подробнее</a></div>

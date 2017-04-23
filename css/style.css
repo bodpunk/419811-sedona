@@ -6,7 +6,7 @@ body {
   font-family: "Arial", "Tahoma", serif;
 }
 
-.for-h3 {
+h3.title {
   font-size: 16px;
   line-height: 1.6;
   color: #000000;
@@ -14,7 +14,7 @@ body {
   font-family: "Arial", "Tahoma", serif;
 }
 
-.for-h2 {
+h2.title {
   font-size: 18px;
   line-height: 1.8;
   color: #000000;
