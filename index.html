@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <title>Седона - главная</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header class="main-header">
       <a href="index.html" class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
       <ul class="main-nav">
-        <li class="left"><a href="#">Информация</a></li>
+        <li class="left"><a href="#"><span>Информация</span></a></li>
         <li class="left"><a href="#">Фото и видео</a></li>
         <li class="right"><a href="#">Карта штата</a></li>
         <li class="right"><a href="catalog.html">Гостиницы</a></li>
@@ -23,8 +24,10 @@
         <img src="img/mountains-bottom.png" class="welcome-pic-bottom" width="1200" height="57" alt="Mask">
       </div>
       <div class="about-sedona">
-        <h3 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="intro">
+          <h3 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <div class="bar-one">
           <div class="reasons blue">
             <h3 class="title">Настоящий городок</h3>
@@ -50,7 +53,7 @@
         <div class="bar-two">
           <img src="img/reasons-second-bar.jpg" class="bar-pic" width="800" height="256" alt="Beautiful Sedona again">
           <div class="reasons blue">
-            <h3 class="title">Там есть мост дьявола</h3>
+            <h3 class="title">Там есть<br> мост дьявола</h3>
             <p> - №2 -</p>
             <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
           </div>
@@ -87,28 +90,30 @@
           </div>
           <div class="form">
           <form action="#" method="get">
-            <div class="date-in form-group">
-              <label for="calendar-in">Дата заезда:</label>
-              <input type="date" name="calendar-in" id="calendar-in">
-            </div>
-            <div class="date-out form-group">
-              <label for="calendar-out">Дата выезда:</label>
-              <input type="date" name="calendar-out" id="calendar-out">
-            </div>
-            <div class="qty-adults form-group">
-              <label for="adult">Взрослые:</label>
-              <input type="button" name="button-minus adult">
-              <input type="text" name="qty-adult" id="adult" value="2">
-              <input type="button" name="button-plus adult">
-            </div>
-            <div class="qty-childs form-group">
-              <label for="child">Дети:</label>
-              <input type="button" name="button-minus child">
-              <input type="text" name="qty-child" id="child" value="0">
-              <input type="button" name="button-plus child">
+            <div class="form-group-mega">
+              <div class="date-in form-group">
+                <label for="calendar-in">Дата заезда:</label>
+                <input type="date" name="calendar-in" id="calendar-in">
+              </div>
+              <div class="date-out form-group">
+                <label for="calendar-out">Дата выезда:</label>
+                <input type="date" name="calendar-out" id="calendar-out">
+              </div>
+              <div class="qty-adults form-group">
+                <label for="adult">Взрослые:</label>
+                <input type="button" name="button-minus adult">
+                <input type="text" name="qty-adult" id="adult" value="2">
+                <input type="button" name="button-plus adult">
+              </div>
+              <div class="qty-childs form-group">
+                <label for="child">Дети:</label>
+                <input type="button" name="button-minus child">
+                <input type="text" name="qty-child" id="child" value="0">
+                <input type="button" name="button-plus child">
+              </div>
             </div>
             <div class="find-it">
-              <input type="submit" value="Найти">
+              <input type="submit" class="find-it-button" value="Найти">
             </div>
           </form>
           </div>
@@ -119,13 +124,19 @@
       <div class="visit">
         <a href="#">#visitsedona</a>
       </div>
-      <div class="links">
-        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="Twitter"></a>
-        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="Facebook"></a>
-        <a href="#"><img src="http://placehold.it/20x20" class="icon" alt="YouTube"></a>
+      <div class="links-social">
+        <div class="twitter" class="icon twitter">
+          <a href="#"><img src="img/social-twitter.png" width="17" height="15" alt="Twitter"></a>
+        </div>
+        <div class="icon facebook">
+          <a href="#"><img src="img/social-twitter.png" width="10" height="19" alt="Facebook"></a>
+        </div>
+        <div class="icon youtube">
+          <a href="#"><img src="img/social-yt.png" width="20" height="16" class="icon" alt="YouTube"></a>
+        </div>
       </div>
-      <div class="academy">
-        <a href="https://htmlacademy.ru/"><img src="http://placehold.it/60x20" class="icon" alt="html academy"></a>
+      <div class="academy icon">
+        <a href="https://htmlacademy.ru/"><img src="img/by-html-academy.png" width="195" height="39" alt="html academy"></a>
       </div>
     </footer>
   </div>
