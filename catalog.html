@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Седона - гостиницы</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -54,19 +55,19 @@
           <div class="from-to">
             <div class="price-min form-group">
               <label for="price-from">ОТ </label>
-                <input type="text" name="price-from" id="price-from" value="0">
+              <input type="text" name="price-from" id="price-from" value="0">
             </div>
             <div class="price-max form-group">
               <label for="price-to">ДО </label>
-                <input type="text" name="price-to" id="price-to" value="3000">
+              <input type="text" name="price-to" id="price-to" value="3000">
+            </div>
+            <div class="slider">
+              <input type="range" name="price-slider">
             </div>
           </div>
-          <div class="slider">
-            <input type="range" name="price-slider">
-          </div>
-          <div class="show">
-            <input type="submit" value="ПОКАЗАТЬ">
-          </div>
+        </div>
+        <div class="show">
+          <input type="submit" value="ПОКАЗАТЬ">
         </div>
       </form>
       </div>
@@ -80,21 +81,25 @@
             <li><a href="#">По рейтингу</a></li>
           </ul>
           <div class="sorting-up-down">
-            <div class="sorting-up"><a href="#"><img src="http://placehold.it/3x3" name="triangle-up"></a></div>
-            <div class="sorting-down"><a href="#"><img src="http://placehold.it/3x3" name="triangle-down"></a></div>
+            <div class="sorting-up"><a href="#"><img src="http://placehold.it/3x3" alt="triangle-up"></a></div>
+            <div class="sorting-down"><a href="#"><img src="http://placehold.it/3x3" alt="triangle-down"></a></div>
           </div>
         </div>
         <div class="not-a-table">
           <div class="hotels-bar">
             <div class="table-pic">
-              <img src="http://placehold.it/100x60" name="amara-pic">
+              <img src="img/amara-resort&spa.jpg" width="135" height="90" alt="amara-pic">
             </div>
             <div class="about-hotel">
               <h2 class="title">Amara Resort & Spa</h2>
-              <div class=details-hotel>Гостиница</div>
-              <div class="details-price">от 3500 р.</div>
-              <div class="details-details"><a href="#">Подробнее</a></div>
-              <div class="details-booking"><a href="#">Забронировать</a></div>
+              <div class="mini-block">
+                <div class="details-hotel">Гостиница</div>
+                <div class="details-details"><a href="#">Подробнее</a></div>
+              </div>
+              <div class="mini-block">
+                <div class="details-price">от 3500 р.</div>
+                <div class="details-booking"><a href="#">Забронировать</a></div>
+              </div>
             </div>
             <div class="rating">
               <div class="stars"><img src="http://placehold.it/100x20" name="four-stars"></div>
@@ -103,14 +108,18 @@
           </div>
           <div class="hotels-bar">
             <div class="table-pic">
-              <img src="http://placehold.it/100x60" name="desert-pic">
+              <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="desert-pic">
             </div>
             <div class="about-hotel">
               <h2 class="title">Desert Quail Inn</h2>
-              <div class=details-hotel>Мотель</div>
-              <div class="details-price">от 2000 р.</div>
-              <div class="details-details"><a href="#">Подробнее</a></div>
-              <div class="details-booking"><a href="#">Забронировать</a></div>
+              <div class="mini-block">
+                <div class="details-hotel">Мотель</div>
+                <div class="details-details"><a href="#">Подробнее</a></div>
+              </div>
+              <div class="mini-block">
+                <div class="details-price">от 2000 р.</div>
+                <div class="details-booking"><a href="#">Забронировать</a></div>
+              </div>
             </div>
             <div class="rating">
               <div class="stars"><img src="http://placehold.it/100x20" name="two-stars"></div>
@@ -119,14 +128,18 @@
           </div>
           <div class="hotels-bar">
             <div class="table-pic">
-              <img src="http://placehold.it/100x60" name="villas-pic">
+              <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="villas-pic">
             </div>
             <div class="about-hotel">
               <h2 class="title">Villas at Poco Diablo</h2>
-              <div class=details-hotel>Апартаменты</div>
-              <div class="details-price">От 4000 р.</div>
-              <div class="details-details"><a href="#">Подробнее</a></div>
-              <div class="details-booking"><a href="#">Забронировать</a></div>
+              <div class="mini-block">
+                <div class=details-hotel>Апартаменты</div>
+                <div class="details-details"><a href="#">Подробнее</a></div>
+              </div>
+              <div class="mini-block">
+                <div class="details-price">От 4000 р.</div>
+                <div class="details-booking"><a href="#">Забронировать</a></div>
+              </div>
             </div>
             <div class="rating">
               <div class="stars"><img src="http://placehold.it/100x20" name="three-stars"></div>
@@ -145,7 +158,7 @@
           <a href="#"><img src="img/social-twitter.png" width="17" height="15" alt="Twitter"></a>
         </div>
         <div class="icon facebook">
-          <a href="#"><img src="img/social-twitter.png" width="10" height="19" alt="Facebook"></a>
+          <a href="#"><img src="img/social-facebook.png" width="10" height="19" alt="Facebook"></a>
         </div>
         <div class="icon youtube">
           <a href="#"><img src="img/social-yt.png" width="20" height="16" class="icon" alt="YouTube"></a>
