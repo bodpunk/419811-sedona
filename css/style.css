@@ -351,8 +351,30 @@ form.sort > div:last-child {
 }
 
 .sort div.form-group {
+  position: relative;
   width: 100%;
   height: 45px;
+}
+
+div.form-group span.check-mark-off {
+  display: inline-block;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+	width: 24px;
+	height: 24px;
+  background-position: -100px -350px;
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked + span.check-mark-off {
+  background-position: -100px -300px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  z-index: -1;
+  margin-right: 15px;
 }
 
 .sort div.pricing {
@@ -478,13 +500,54 @@ ul.sorting {
 
 .sorting a:hover {
   color: #81b3d2;
+  text-decoration: underline dotted #81b3d2;
+}
+
+.sorting a:active {
+  color: #000000;
   text-decoration: none;
+}
+
+.sorting li:nth-child(2) a {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+div.sorting-up-down {
+  float: right;
+  height: 15px;
+  margin-top: -26px;
 }
 
 .sorting-up-down div {
   float: right;
-  margin: 5px;
-  margin-top: -20px;
+  margin-left: 12px;
+  width: 11px;
+  height: 10px;
+}
+
+.triangle-up-gray {
+  background-position: -200px -250px;
+}
+
+.triangle-up-gray:hover {
+  background-position: -200px -150px;
+}
+
+.triangle-up-gray:active {
+  background-position: -200px -200px;
+}
+
+.triangle-down-gray {
+  background-position: -250px -250px;
+}
+
+.triangle-down-gray:hover {
+  background-position: -250px -150px;
+}
+
+.triangle-down-gray:active {
+  background-position: -250px -200px;
 }
 
 div.not-a-table {
@@ -500,6 +563,7 @@ div.hotels-bar {
 
 .not-a-table h2 {
   font-size: 21px;
+  margin-bottom: 15px;
 }
 
 div.hotels-bar > div {
@@ -525,6 +589,7 @@ div.hotels-bar > div:first-child {
 }
 
 div.mini-block {
+  margin-top: -7px;
   display: inline-block;
   margin-right: 15px;
   width: 100px;
@@ -557,6 +622,7 @@ div.rating {
 }
 
 div.stars {
+  display: inline-block;
   margin-bottom: 40px;
 }
 
@@ -638,6 +704,7 @@ div.by-html-academy {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 41px;
+  margin-left: 100px;
 	background-position: -100px 0;
 	width: 195px;
 	height: 39px;
