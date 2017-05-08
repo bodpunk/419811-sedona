@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Седона - гостиницы</title>
+  <title>Седона — гостиницы</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -11,10 +12,10 @@
     <header class="main-header">
       <a href="index.html" class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
       <ul class="main-nav">
-        <li class="left"><a href="#"><span>Информация</span></a></li>
+        <li class="left"><a href="#">Информация</a></li>
         <li class="left"><a href="#">Фото и видео</a></li>
+        <li class="right active-page"><a>Гостиницы</a></li>
         <li class="right"><a href="#">Карта штата</a></li>
-        <li class="right"><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </header>
     <main>
@@ -72,13 +73,13 @@
           <div class="title">Найдено: 3</div>
           <ul class="sorting">
             <li>Сортировка:</li>
-            <li><a href="#">По цене</a></li>
+            <li><a href="#" class="sorting-active">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
           <div class="sorting-up-down">
+            <div class="triangle-down-gray sorting-down-active sprite"></div>
             <div class="triangle-up-gray sprite"></div>
-            <div class="triangle-down-gray sprite"></div>
           </div>
         </div>
         <div class="not-a-table">
@@ -87,7 +88,7 @@
               <img src="img/amara-resort&spa.jpg" width="135" height="90" alt="amara-pic">
             </div>
             <div class="about-hotel">
-              <h2 class="title">Amara Resort & Spa</h2>
+              <h2 class="title"><a href="#" class="hotel-link">Amara Resort & Spa</a></h2>
               <div class="mini-block">
                 <div class="details-hotel">Гостиница</div>
                 <div class="details-details"><a href="#">Подробнее</a></div>
@@ -107,7 +108,7 @@
               <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="desert-pic">
             </div>
             <div class="about-hotel">
-              <h2 class="title">Desert Quail Inn</h2>
+              <h2 class="title"><a href="#" class="hotel-link">Desert Quail Inn</a></h2>
               <div class="mini-block">
                 <div class="details-hotel">Мотель</div>
                 <div class="details-details"><a href="#">Подробнее</a></div>
@@ -127,7 +128,7 @@
               <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="villas-pic">
             </div>
             <div class="about-hotel">
-              <h2 class="title">Villas at Poco Diablo</h2>
+              <h2 class="title"><a href="#" class="hotel-link">Villas at Poco Diablo</a></h2>
               <div class="mini-block">
                 <div class=details-hotel>Апартаменты</div>
                 <div class="details-details"><a href="#">Подробнее</a></div>
@@ -152,12 +153,15 @@
       <div class="links-social">
         <div class="sprite social-twitter">
           <a href="#"></a>
+          <div class="back-social"></div>
         </div>
         <div class="sprite social-facebook">
           <a href="#"></a>
+          <div class="back-social"></div>
         </div>
         <div class="sprite social-yt">
           <a href="#"></a>
+          <div class="back-social"></div>
         </div>
       </div>
       <div class="sprite by-html-academy">

@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Седона - главная</title>
+  <title>Седона — главная</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -13,8 +14,8 @@
       <ul class="main-nav">
         <li class="left"><a href="#"><span>Информация</span></a></li>
         <li class="left"><a href="#">Фото и видео</a></li>
-        <li class="right"><a href="#">Карта штата</a></li>
         <li class="right"><a href="catalog.html">Гостиницы</a></li>
+        <li class="right"><a href="#">Карта штата</a></li>
       </ul>
     </header>
     <main>
@@ -25,14 +26,14 @@
       </div>
       <div class="about-sedona">
         <div class="intro">
-          <h3 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <h3 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <div class="bar-one">
           <div class="reasons blue">
             <h3 class="title">Настоящий городок</h3>
-            <p> - №1 -</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <p> — №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img src="img/reasons-first-bar.jpg" class="bar-pic" width="800" height="256" alt="Beautiful Sedona">
         </div>
@@ -58,7 +59,7 @@
           <div class="reasons blue">
             <h3 class="title">Там есть<br> мост дьявола</h3>
             <p> - №2 -</p>
-            <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <div class="reasons gray">
@@ -82,7 +83,7 @@
       <div class="go-to-sedona">
         <div class="interested">
           <h2 class="title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497603.279555114!2d-111.81321434475477!3d34.98150543752869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494068378639" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -95,24 +96,24 @@
           <form action="#" method="get">
             <div class="form-group-mega">
               <div class="date-in form-group">
-                <label for="calendar-in">Дата заезда:</label>
-                <input type="date" name="calendar-in" id="calendar-in">
+                <label for="calendar-in">Дата заезда:
+                <input type="date" name="calendar-in" id="calendar-in"><span class="sprite button-calendar"></span></label>
               </div>
               <div class="date-out form-group">
-                <label for="calendar-out">Дата выезда:</label>
-                <input type="date" name="calendar-out" id="calendar-out">
+                <label for="calendar-out">Дата выезда:
+                <input type="date" name="calendar-out" id="calendar-out"><span class="sprite button-calendar"></span></label>
               </div>
               <div class="qty-adults form-group">
-                <label for="adult" class="sfsff">Взрослые:</label>
-                <input type="button" name="button-minus adult">
+                <label for="adult">Взрослые:</label>
+                <input type="button" name="button-minus-adult" value="adilts-1"><div class="button-minus"></div>
                 <input type="text" name="qty-adult" id="adult" value="2">
-                <input type="button" name="button-plus adult">
+                <input type="button" name="button-plus-adult" value="adilts+1"><div class="button-plus"><div class="button-plus-h"></div><div class="button-plus-v"></div></div>
               </div>
               <div class="qty-childs form-group">
                 <label for="child">Дети:</label>
-                <input type="button" name="button-minus child">
+                <input type="button" name="button-minus-child" value="childs-1"><div class="button-minus"></div>
                 <input type="text" name="qty-child" id="child" value="0">
-                <input type="button" name="button-plus child">
+                <input type="button" name="button-plus-child" value="childs+1"><div class="button-plus"><div class="button-plus-h"></div><div class="button-plus-v"></div></div>
               </div>
             </div>
             <div class="find-it">
@@ -130,12 +131,15 @@
       <div class="links-social">
         <div class="sprite social-twitter">
           <a href="#"></a>
+          <div class="back-social"></div>
         </div>
         <div class="sprite social-facebook">
           <a href="#"></a>
+          <div class="back-social"></div>
         </div>
         <div class="sprite social-yt">
           <a href="#"></a>
+          <div class="back-social"></div>
         </div>
       </div>
       <div class="sprite by-html-academy">

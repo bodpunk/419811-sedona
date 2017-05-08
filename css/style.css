@@ -17,6 +17,7 @@ body {
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .sprite {
@@ -41,11 +42,14 @@ h2.title {
   width: 100%;
   font-size: 0;
   text-align: center;
-  height: 56px;
+  height: 63px;
+  margin-top: -7px;
 }
 
 ul.main-nav {
-  padding: 0;
+  padding-top: 6px;
+  padding-left: 0;
+  height: 100%;
 }
 
 .main-nav li {
@@ -61,13 +65,13 @@ ul.main-nav {
   height: 100%;
   text-decoration: none;
   color: #000000;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 10px;
 }
 
 a.logo {
   position: absolute;
   margin-left: -69px;
+  top: 0px;
   font-size: 14px;
   z-index: 1;
 }
@@ -80,33 +84,51 @@ li.right {
   float: right;
 }
 
+.main-nav a:hover {
+  color: #81b3d2;
+}
+
+.main-nav a:active {
+  color: #b2b2b2;
+}
+
+.active-page a,
+.active-page a:hover,
+.active-page a:active {
+  color: #766357;
+  cursor: pointer;
+}
+
 header::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.main-pic-block {
+div.main-pic-block {
+  position: relative;
+  width: 1200px;
   height: 512px;
-  text-align: left;
-  margin-bottom: 0;
+  margin-top: -7px;
 }
 
-.main-pic-block img {
+img.main-pic {
   position: absolute;
-  max-height: 512px;
+  left: 0;
 }
 
 .welcome-pic {
   position: absolute;
-  margin-top: 62px;
+  margin-top: 74px;
   left: 50%;
-  margin-left: -228px;
+  margin-left: -229px;
   z-index: 1;
 }
 
 .welcome-pic-bottom {
   position: absolute;
+  height: 57px;
+  left: 0;
   margin-top: 455px;
   z-index: 1;
 }
@@ -119,12 +141,16 @@ header::after {
   width: 440px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
-  margin-top: 60px;
+  margin-bottom: 27px;;
+  margin-top: 53px;
 }
 
 .intro p {
   font-weight: normal;
+}
+
+.bar-one {
+  margin-top: 7px;
 }
 
 div.blue {
@@ -133,16 +159,22 @@ div.blue {
   height: 147px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 46px 40px 63px
+  padding: 46px 40px 63px;
 }
 
 .blue .title {
   color: #ffffff;
   margin-top: 0;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  width: 160px;
+  line-height: 1;
 }
 
 .blue p {
+  max-width: 308px;
   font-weight: normal;
+  margin-bottom: 25px;
 }
 
 div.white {
@@ -288,7 +320,38 @@ div.form-group-mega {
 
 .form-group-mega input {
   float: right;
-  width: 326px;
+  width: 327px;
+  height: 39px;
+  margin-top: -11px;
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form-group-mega input:hover {
+  background-color: #ebebeb;
+}
+
+.form-group-mega input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+span.button-calendar {
+  display: inline-block;
+  position: absolute;
+  right: 73px;
+  background-position: 0 -400px;
+	width: 27px;
+	height: 22px;
+}
+
+span.button-calendar:hover {
+  background-position: 0 -300px;
+}
+
+span.button-calendar:active {
+  background-position: 0 -350px;
 }
 
 div.qty-adults,
@@ -320,6 +383,54 @@ div.qty-childs {
   font-family: "PT Sans", "Arial", serif;
   font-weight: bold;
   font-size: 14px;
+}
+
+div.button-minus {
+  position: absolute;
+  background-color: #a9a9a9;
+  height: 3px;
+  width: 11px;
+  right: 104px;
+  bottom: 31px;
+}
+
+div.button-plus-h {
+  position: absolute;
+  background-color: inherit;
+  height: 3px;
+  width: 11px;
+  right: 29px;
+  bottom: 31px;
+}
+
+div.button-plus-v {
+  position: absolute;
+  background-color: inherit;
+  height: 11px;
+  width: 3px;
+  right: 33px;
+  bottom: 27px;
+}
+
+div.button-plus,
+div.button-minus {
+  background-color: #a9a9a9;
+}
+
+div.button-plus:hover,
+div.button-minus:hover {
+  background-color: #000000;
+}
+
+
+div.button-plus:active,
+div.button-minus:active {
+  background-color: #81b3d2;
+}
+
+.qty-adults input[type="button"],
+.qty-childs input[type="button"]{
+  font-size: 0;
 }
 
 div.visit a {
@@ -508,7 +619,9 @@ ul.sorting {
   text-decoration: none;
 }
 
-.sorting li:nth-child(2) a {
+a.sorting-active,
+a.sorting-active:hover,
+a.sorting-active:active {
   color: #81b3d2;
   text-decoration: none;
 }
@@ -550,6 +663,12 @@ div.sorting-up-down {
   background-position: -250px -200px;
 }
 
+.sorting-down-active,
+.sorting-down-active:hover,
+.sorting-down-active:active {
+  background-position: -250px -200px;
+}
+
 div.not-a-table {
   margin-left: -70px;
   margin-right: -70px;
@@ -588,6 +707,19 @@ div.hotels-bar > div:first-child {
   text-align: left;
 }
 
+a.hotel-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+a.hotel-link:hover {
+  color: #81b3d2;
+}
+
+a.hotel-link:active {
+  color: #b2b2b2;
+}
+
 div.mini-block {
   margin-top: -7px;
   display: inline-block;
@@ -606,9 +738,27 @@ div.details-booking a {
   padding: 5px 15px;
 }
 
+div.details-booking a:hover {
+  background-color: #604e43;
+}
+
+div.details-booking a:active {
+  background-color: #503e33;
+  color: #766860;
+}
+
 div.details-details a {
   background-color: #81b3d2;
   padding: 5px 15px;
+}
+
+div.details-details a:hover {
+  background-color: #669ec0;
+}
+
+div.details-details a:active {
+  background-color: #5496bd;
+  color: #6ca5c6;
 }
 
 .mini-block a {
@@ -672,17 +822,13 @@ footer > div:first-child {
   padding-top: 50px;
 }
 
-div.links-social div {
+div.links-social > div {
   display: inline-block;
   width: 45px;
   height: 47px;
   vertical-align: bottom;
   background-position: -32px -337px;
   background-color: #81b3d2;
-}
-
-div.links-social div:hover {
-  background-color: #669ec0;
 }
 
 div.links-social div:first-child{
@@ -697,6 +843,18 @@ div.links-social a {
   display: inline-block;
   width: 45px;
   height: 47px;
+}
+
+div.links-social > div:hover {
+  background-color: #5496bd;
+}
+
+div:active > div.back-social {
+  position: absolute;
+  top: 36px;
+  width: 45px;
+  height: 47px;
+  background: rgba(84,150,189, 0.5);
 }
 
 div.by-html-academy {
