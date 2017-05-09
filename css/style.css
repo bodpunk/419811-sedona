@@ -68,6 +68,7 @@ ul.main-nav {
 
 a.logo {
   position: absolute;
+  left: 50%;
   margin-left: -69px;
   top: 0px;
   font-size: 14px;
