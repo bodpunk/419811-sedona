@@ -43,29 +43,27 @@ h2.title {
   font-size: 0;
   text-align: center;
   height: 63px;
-  margin-top: -7px;
 }
 
 ul.main-nav {
-  padding-top: 6px;
   padding-left: 0;
-  height: 100%;
 }
 
 .main-nav li {
   display: inline-block;
   width: 20%;
+  height: 63px;
   font-size: 14px;
   font-weight: bold;
 }
 
 .main-nav a {
   display: block;
+  margin-top: 18px;
   width: 100%;
-  height: 100%;
+  height: auto;
   text-decoration: none;
   color: #000000;
-  padding-top: 10px;
 }
 
 a.logo {
@@ -141,8 +139,9 @@ img.main-pic {
   width: 440px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 27px;;
-  margin-top: 53px;
+  margin-bottom: 33px;;
+  margin-top: 56px;
+  line-height: 1.2;
 }
 
 .intro p {
@@ -174,7 +173,9 @@ div.blue {
 .blue p {
   max-width: 308px;
   font-weight: normal;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  margin-left: 5px;
+  line-height: 1.4;
 }
 
 div.white {
@@ -191,6 +192,7 @@ div.white {
   width: 300px;
   height: 110px;
   margin: 135px 50px;
+  line-height: 1.3;
 }
 
 .house {
@@ -227,6 +229,10 @@ div.white {
   font-weight: normal;
 }
 
+div.bar-two {
+  margin-top: -3px;
+}
+
 .bar-two div {
   float: right;
 }
@@ -234,7 +240,7 @@ div.white {
 .gray section {
   float: left;
   width: 262px;
-  height: 256px;
+  height: 253px;
   background-color: #eeeeee;
   color: #000000;
   padding-left: 69px;
@@ -242,9 +248,16 @@ div.white {
 }
 
 .gray .title {
-  margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 43px;
+  margin-bottom: 26px;
+  padding-left: 52px;
+  padding-right: 55px;
+  line-height: 1;
+}
+
+.gray p {
+  margin-bottom: 21px;
+  line-height: 1.4;
 }
 
 div.go-to-sedona {
@@ -252,8 +265,16 @@ div.go-to-sedona {
 }
 
 div.interested {
-  margin-top: 310px;
+  margin-top: 305px;
   margin-bottom: 137px;
+}
+
+.interested .title {
+  font-size: 30px;
+}
+
+.interested p {
+  line-height: 1.6;
 }
 
 div.map {
@@ -263,11 +284,11 @@ div.map {
 
 div.find-hotel {
   position: absolute;
-  bottom: 201px;
+  bottom: 204px;
   left: 50%;
   width: 568px;
   height: 481px;
-  margin-left: -283px;
+  margin-left: -285px;
   background-color: #ffffff;
   z-index: 2;
 }
@@ -281,47 +302,27 @@ div.find-hotel {
   text-transform: uppercase;
   font-size: 21px;
   width: 568px;
-  height: 86px;
-}
-
-.find-hotel .title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-
-div.find-it {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 110px;
-}
-
-.find-it-button {
-  width: 457px;
-  height: 57px;
-  font-size: 21px;
-  color: #ffffff;
-  font-weight: bold;
-  font-family: "PT Sans", "Arial", serif;
-  text-transform: uppercase;
-  background-color: #81b3d2;
+  height: 88px;
 }
 
 div.form-group-mega {
-  margin: 53px;
+  margin-top: 50px;
+  margin-left: 43px;
+  margin-right: 39px;
   font-weight: bold;
+
 }
 
 .form-group-mega div.form-group {
-  height: 26px;
+  height: 37px;
   padding: 15px;
   text-align: left;
 }
 
 .form-group-mega input {
   float: right;
-  width: 327px;
-  height: 39px;
+  width: 344px;
+  height: 37px;
   margin-top: -11px;
   font: inherit;
   background-color: #f2f2f2;
@@ -340,10 +341,15 @@ div.form-group-mega {
 span.button-calendar {
   display: inline-block;
   position: absolute;
-  right: 73px;
+  right: 62px;
+  top: 150px;
   background-position: 0 -400px;
-	width: 27px;
+	width: 22px;
 	height: 22px;
+}
+
+.date-out span.button-calendar {
+  top: 217px;
 }
 
 span.button-calendar:hover {
@@ -357,15 +363,15 @@ span.button-calendar:active {
 div.qty-adults,
 div.qty-childs {
   position: absolute;
-  width: 218px;
+  width: 226px;
   padding: 0;
-  margin: 0;
-  vertical-align: top;
+  margin-left: -2px;
+  margin-top: 1px;
 }
 
 div.qty-childs {
-  right: 53px;
-  width: 182px;
+  right: 40px;
+  width: 178px;
 }
 
 .qty-adults input,
@@ -391,7 +397,7 @@ div.button-minus {
   height: 3px;
   width: 11px;
   right: 104px;
-  bottom: 31px;
+  bottom: 42px;
 }
 
 div.button-plus-h {
@@ -400,7 +406,7 @@ div.button-plus-h {
   height: 3px;
   width: 11px;
   right: 29px;
-  bottom: 31px;
+  bottom: 42px;
 }
 
 div.button-plus-v {
@@ -409,7 +415,7 @@ div.button-plus-v {
   height: 11px;
   width: 3px;
   right: 33px;
-  bottom: 27px;
+  bottom: 38px;
 }
 
 div.button-plus,
@@ -433,11 +439,21 @@ div.button-minus:active {
   font-size: 0;
 }
 
-div.visit a {
+div.find-it {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 96px;
+}
+
+.find-it-button {
+  width: 459px;
+  height: 59px;
   font-size: 21px;
-  color: black;
+  color: #ffffff;
   font-weight: bold;
-  text-decoration: none;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+  background-color: #81b3d2;
 }
 
 div.sort {
@@ -445,26 +461,43 @@ div.sort {
   background-image: url(../img/mountains-filter.jpg);
   background-position: 0 20%;
   padding: 0px 73px 0px 61px;
+  margin-top: -6px;
   color: white;
 }
 
 form.sort > div {
-  padding-left: 12px;
+  padding-left: 11px;
   height: 176px;
   float: left;
   width: 240px;
   text-align: left;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+
+form.sort h3 {
+  margin-bottom: 29px;
+}
+
+div.pricing h3 {
+  margin-bottom: 11px;
 }
 
 form.sort > div:last-child {
   float: right;
   width: 317px;
+  margin-right: 0px;
+  height: 190px;
 }
 
 .sort div.form-group {
   position: relative;
   width: 100%;
   height: 45px;
+}
+
+.sort div.form-group input {
+  margin-right: 25px;
 }
 
 div.form-group span.check-mark-off {
@@ -485,7 +518,6 @@ input[type="checkbox"]:checked + span.check-mark-off {
 input[type="checkbox"] {
   position: relative;
   z-index: -1;
-  margin-right: 15px;
 }
 
 .sort div.pricing {
@@ -497,8 +529,8 @@ div.from-to {
   border: 2px solid white;
   border-radius: 2%;
   width: 250px;
-  height: 22px;
-  padding: 11px 0px 11px 65px;
+  height: 13px;
+  padding: 8px 0px 11px 65px;
 }
 
 div.from-to:before {
@@ -508,11 +540,11 @@ div.from-to:before {
   width: 2px;
   height: 22px;
   left: 50%;
-  top: ;
+  top: 7px;
 }
 
 .from-to label:first-child {
-  margin-right: 83px;
+  margin-right: 88px;
 }
 
 .from-to input {
@@ -529,7 +561,7 @@ div.slider {
   height: 2px;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 div.range-slider {
@@ -558,10 +590,9 @@ div.max-slider {
 }
 
 .show input {
-  margin-left: 83px;
-  margin-right: 96px;
-  width: 133px;
-  height: 32px;
+  margin-left: 85px;
+  width: 137px;
+  height: 35px;
   border: 2px solid white;
   font: inherit;
   color: inherit;
@@ -574,34 +605,42 @@ div.max-slider {
 }
 
 div.results {
-  height: 659px;
-  margin-top: -20px;
+  height: 664px;
   padding-left: 71px;
   padding-right: 71px;
 }
 
 div.before-not-a-table {
   height: 21px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  margin-left: -70px;
+  margin-right: -70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 div.before-not-a-table div.title {
   float: left;
   font-size: 21px;
   font-weight: bold;
-  margin-right: 50px;
+  margin-right: 49px;
 }
 
 ul.sorting {
   text-align: left;
-  margin-left: 10px;
   margin-top: 5px;
 }
 
 .sorting li {
+  font-size: 12px;
   display: inline-block;
-  margin-right: 32px;
+  margin-right: 29px;
+}
+
+.sorting li:first-child {
+  margin-right: 36px;
 }
 
 .sorting a {
@@ -629,12 +668,12 @@ a.sorting-active:active {
 div.sorting-up-down {
   float: right;
   height: 15px;
-  margin-top: -26px;
+  margin-top: -27px;
 }
 
 .sorting-up-down div {
   float: right;
-  margin-left: 12px;
+  margin-left: 13px;
   width: 11px;
   height: 10px;
 }
@@ -682,19 +721,18 @@ div.hotels-bar {
 
 .not-a-table h2 {
   font-size: 21px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 17px;
 }
 
 div.hotels-bar > div {
-  padding: 28px 25px 28px 0px;
-  max-height: 94px;
+  padding: 29px 22px 0px 0px;
   float: left;
-  vertical-align: top;
 }
 
 div.hotels-bar div.rating {
   float: right;
-  margin-right: 40px;
+  margin-right: 48px;
   text-align: right;
 }
 
@@ -723,19 +761,19 @@ a.hotel-link:active {
 div.mini-block {
   margin-top: -7px;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 11px;
   width: 100px;
 }
 
 div.details-booking,
 div.details-details {
-  margin-top: 15px;
+  margin-top: 23px;
   text-align: center;
 }
 
 div.details-booking a {
   background-color: #766357;
-  padding: 5px 15px;
+  padding: 4px 17px;
 }
 
 div.details-booking a:hover {
@@ -749,7 +787,7 @@ div.details-booking a:active {
 
 div.details-details a {
   background-color: #81b3d2;
-  padding: 5px 15px;
+  padding: 4px 17px;
 }
 
 div.details-details a:hover {
@@ -796,16 +834,16 @@ div.stars {
 
 .rating div.value {
   background-color: #f2f2f2;
-  padding: 5px 15px;
+  padding: 9px 14px;
 }
 
 footer {
   font-size: 0;
   position: absolute;
-  height: 120px;
+  height: 124px;
   background-color: rgba(255,255,255,0.9);
   width: 1200px;
-  margin-top: -120px;
+  margin-top: -124px;
   z-index: 2;
 }
 
@@ -819,14 +857,20 @@ footer > div {
 }
 
 footer > div:first-child {
-  padding-top: 50px;
+  padding-top: 45px;
+}
+
+div.visit a {
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 div.links-social > div {
   display: inline-block;
-  width: 45px;
-  height: 47px;
-  vertical-align: bottom;
+  width: 46px;
+  height: 48px;
   background-position: -32px -337px;
   background-color: #81b3d2;
 }
@@ -835,14 +879,19 @@ div.links-social div:first-child{
   background-position: -34px -285px;
 }
 
+div.links-social div:nth-child(2) {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
 div.links-social div:last-child{
   background-position: -37px -384px;
 }
 
 div.links-social a {
   display: inline-block;
-  width: 45px;
-  height: 47px;
+  width: 46px;
+  height: 48px;
 }
 
 div.links-social > div:hover {
