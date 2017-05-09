@@ -246,6 +246,8 @@ div.bar-two {
   color: #000000;
   padding-left: 69px;
   padding-right: 69px;
+  position: relative;
+  z-index: 3;
 }
 
 .gray .title {
@@ -266,12 +268,17 @@ div.go-to-sedona {
 }
 
 div.interested {
-  margin-top: 305px;
-  margin-bottom: 137px;
+  margin-top: 255px;
+  padding-bottom: 137px;
+  padding-top: 50px;
+  position: relative;
+  background-color: white;
+  z-index: 3;
 }
 
 .interested .title {
   font-size: 30px;
+  margin-top: 50px;
 }
 
 .interested p {
@@ -292,6 +299,26 @@ div.find-hotel {
   margin-left: -285px;
   background-color: #ffffff;
   z-index: 2;
+}
+
+div.brown {
+  position: absolute;
+  bottom: 597px;
+  left: 50%;
+  margin-left: -285px;
+  z-index: 4;
+}
+
+div.hiding-block {
+  position: absolute;
+  background-color: white;
+  bottom: 257px;
+  width: 568px;
+  height: 366px;
+  left: 50%;
+  margin-left: -285px;
+  z-index: 2;
+  display: none;
 }
 
 .brown input {
@@ -343,14 +370,14 @@ span.button-calendar {
   display: inline-block;
   position: absolute;
   right: 62px;
-  top: 150px;
+  top: 62px;
   background-position: 0 -400px;
 	width: 22px;
 	height: 22px;
 }
 
 .date-out span.button-calendar {
-  top: 217px;
+  top: 129px;
 }
 
 span.button-calendar:hover {
@@ -377,10 +404,10 @@ div.qty-childs {
 
 .qty-adults input,
 .qty-childs input {
+  display: inline-block;
   width: 38px;
   height: 36px;
-  padding: 0;
-  border: none;
+  padding: 0px;
   text-align: center;
   margin-top: -10px;
 }
@@ -390,6 +417,18 @@ div.qty-childs {
   font-family: "PT Sans", "Arial", serif;
   font-weight: bold;
   font-size: 14px;
+}
+
+input.qty-adult,
+input.qty-child {
+  margin-top: -26px;
+  width: 36px;
+  height: 34px;
+}
+
+input.button-plus-adult,
+input.button-plus-child {
+  margin-top: -26px;
 }
 
 div.button-minus {
@@ -424,15 +463,31 @@ div.button-minus {
   background-color: #a9a9a9;
 }
 
-div.button-plus:hover,
-div.button-minus:hover {
+input:hover + div.button-plus,
+input:hover + div.button-minus {
   background-color: #000000;
 }
 
-
-div.button-plus:active,
-div.button-minus:active {
+input:active + div.button-plus,
+input:active + div.button-minus {
   background-color: #81b3d2;
+}
+
+.form-group-mega input[type="text"] {
+  width: 37px;
+  height: 36px;
+}
+
+.form-group-mega input:focus {
+  background-color: #f2f2f2;
+  outline: none;
+  border: none;
+}
+
+.form-group-mega input[type="text"]:focus {
+  width: 37px;
+  height: 36px;
+
 }
 
 .qty-adults input[type="button"],
@@ -930,4 +985,17 @@ div.by-html-academy:active {
   display: inline-block;
   width: 195px;
 	height: 39px;
+}
+
+ div.show-me {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  animation-name: lift-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes lift-down {
+  from {transform: translateY(-350px);}
+  to {transform: translateY(0px);}
 }
