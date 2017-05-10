@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -28,14 +29,14 @@ h3.title {
   font-size: 21px;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans", "Tahoma", serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 h2.title {
   font-size: 28px;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans", "Tahoma", serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .main-header {
@@ -51,16 +52,16 @@ ul.main-nav {
 
 .main-nav li {
   display: inline-block;
+  vertical-align: top;
   width: 20%;
-  height: 63px;
+  height: 56px;
   font-size: 14px;
   font-weight: bold;
 }
 
 .main-nav a {
-  display: block;
+  display: inline-block;
   margin-top: 18px;
-  width: 100%;
   height: auto;
   text-decoration: none;
   color: #000000;
@@ -193,6 +194,7 @@ div.white {
   position: relative;
   font-size: 14px;
   display: inline-block;
+  vertical-align: top;
   width: 300px;
   height: 113px;
   margin: 135px 50px;
@@ -293,6 +295,8 @@ div.interested {
 div.map {
   position: relative;
   z-index: 2;
+  background-color: #f2f1ef;
+  background-image: url(../img/map.jpg);
 }
 
 div.find-hotel {
@@ -312,66 +316,95 @@ div.brown {
   left: 50%;
   margin-left: -285px;
   z-index: 4;
-}
-
-div.hiding-block {
-  position: absolute;
-  background-color: white;
-  bottom: 257px;
-  width: 568px;
-  height: 366px;
-  left: 50%;
-  margin-left: -285px;
-  z-index: 2;
-  display: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .brown input {
   background-color: #766357;
   padding: 0px;
   color: #ffffff;
-  font-family: "PT Sans", "Tahoma", serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 21px;
   width: 568px;
   height: 88px;
+  cursor: pointer;
+  border: none;
+}
+
+.brown input:hover {
+  background-color: #604e43;
+}
+
+.brown input:active {
+  background-color: #503e33;
+  color: #706158;
+}
+
+div.hiding-block {
+  position: absolute;
+  background-color: white;
+  bottom: 192px;
+  padding: 55px;
+  min-width: 458px;
+  min-height: 285px;
+  left: 50%;
+  margin-left: -285px;
+  z-index: 2;
+  display: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 div.form-group-mega {
-  margin-top: 50px;
-  margin-left: 43px;
-  margin-right: 39px;
+  padding: 0;
+  min-height: 206px;
   font-weight: bold;
 }
 
 .form-group-mega div.form-group {
-  height: 37px;
-  padding: 15px;
   text-align: left;
 }
 
-.form-group-mega input {
+div.date-in,
+div.date-out {
+  padding-top: 10px;
+  height: 28px;
+  margin-bottom: 29px;
+}
+
+input.calendar-input {
   float: right;
-  width: 344px;
-  height: 37px;
+  min-width: 294px;
+  padding-left: 12px;
+  padding-right: 40px;
+  height: 38px;
   margin-top: -11px;
   font: inherit;
   background-color: #f2f2f2;
-  border: none;
 }
 
-.form-group-mega input:hover {
+.form-group-mega input,
+.form-group-mega button {
+  background-color: #f2f2f2;
+  border: none;
+  font: inherit;
+}
+
+.form-group-mega button {
+  cursor: pointer;
+}
+
+.form-group-mega input:hover,
+.form-group-mega button:hover {
   background-color: #ebebeb;
 }
 
 .form-group-mega input:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
 }
 
 span.button-calendar {
-  display: inline-block;
   position: absolute;
   right: 62px;
   top: 62px;
@@ -381,7 +414,7 @@ span.button-calendar {
 }
 
 .date-out span.button-calendar {
-  top: 129px;
+  top: 128px;
 }
 
 span.button-calendar:hover {
@@ -394,45 +427,40 @@ span.button-calendar:active {
 
 div.qty-adults,
 div.qty-childs {
-  position: absolute;
-  width: 226px;
-  padding: 0;
-  margin-left: -2px;
-  margin-top: 1px;
+  height: 38px;
+  position: relative;
+  float: left;
+  min-width: 227px;
 }
 
 div.qty-childs {
-  right: 40px;
-  width: 178px;
+  float: right;
+  margin-right: 0px;
+  min-width: 180px;
+}
+
+div.qty-adults label,
+div.qty-childs label {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 10px;
+  height: 100%;
 }
 
 .qty-adults input,
-.qty-childs input {
-  display: inline-block;
+.qty-childs input,
+.qty-adults button,
+.qty-childs button {
+  float: right;
   width: 38px;
-  height: 36px;
-  padding: 0px;
+  height: 38px;
+  padding: 0;
   text-align: center;
-  margin-top: -10px;
 }
 
-.form-group input {
-  background-color: #f2f2f2;
-  font-family: "PT Sans", "Arial", serif;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-input.qty-adult,
-input.qty-child {
-  margin-top: -26px;
-  width: 36px;
-  height: 34px;
-}
-
-input.button-plus-adult,
-input.button-plus-child {
-  margin-top: -26px;
+div.clearfix::after {
+  content: "";
+  clear: both;
 }
 
 div.button-minus {
@@ -440,8 +468,8 @@ div.button-minus {
   background-color: #a9a9a9;
   height: 3px;
   width: 11px;
-  right: 104px;
-  bottom: 42px;
+  right: 89px;
+  bottom: 19px;
 }
 
 div.button-plus-h {
@@ -449,8 +477,8 @@ div.button-plus-h {
   background-color: inherit;
   height: 3px;
   width: 11px;
-  right: 29px;
-  bottom: 42px;
+  right: 14px;
+  bottom: 19px;
 }
 
 div.button-plus-v {
@@ -458,8 +486,8 @@ div.button-plus-v {
   background-color: inherit;
   height: 11px;
   width: 3px;
-  right: 33px;
-  bottom: 38px;
+  right: 18px;
+  bottom: 15px;
 }
 
 div.button-plus,
@@ -467,46 +495,29 @@ div.button-minus {
   background-color: #a9a9a9;
 }
 
-input:hover + div.button-plus,
-input:hover + div.button-minus,
+button:hover div.button-plus,
+button:hover div.button-minus,
 div.button-plus:hover,
 div.button-minus:hover {
   background-color: #000000;
 }
 
-input:active + div.button-plus,
-input:active + div.button-minus,
+button:active div.button-plus,
+button:active div.button-minus,
 div.button-plus:active,
 div.button-minus:active {
   background-color: #81b3d2;
 }
 
-.form-group-mega input[type="text"] {
-  width: 37px;
-  height: 36px;
-}
-
-.form-group-mega input:focus {
-  background-color: #f2f2f2;
-  outline: none;
-  border: none;
-}
-
-.form-group-mega input[type="text"]:focus {
-  width: 37px;
-  height: 36px;
-
-}
-
-.qty-adults input[type="button"],
-.qty-childs input[type="button"]{
+.qty-adults button,
+.qty-childs button {
   font-size: 0;
 }
 
 div.find-it {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 96px;
+  background-color: red;
 }
 
 .find-it-button {
@@ -515,9 +526,20 @@ div.find-it {
   font-size: 21px;
   color: #ffffff;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+}
+
+.find-it-button:hover {
+  background-color: #669ec0;
+}
+
+.find-it-button:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 }
 
 div.sort {
@@ -566,7 +588,6 @@ div.form-group.sorting-form input {
 }
 
 div.form-group span.check-mark-off {
-  display: inline-block;
   position: absolute;
   left: -2px;
   top: -2px;
@@ -574,13 +595,14 @@ div.form-group span.check-mark-off {
 	height: 24px;
   background-position: -100px -350px;
   z-index: 1;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:checked + span.check-mark-off {
+input.checking[type="checkbox"]:checked + span.check-mark-off {
   background-position: -100px -300px;
 }
 
-input[type="checkbox"] {
+input.checking[type="checkbox"] {
   position: relative;
   z-index: -1;
 }
@@ -654,14 +676,21 @@ div.max-slider {
   background-color: #1c4f80;
 }
 
-.show input {
+.show button {
   margin-left: 85px;
   width: 137px;
   height: 35px;
   border: 2px solid white;
+  border-radius: 2px;
   font: inherit;
-  color: inherit;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.show button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .sort h3 {
@@ -701,6 +730,7 @@ ul.sorting {
 .sorting li {
   font-size: 12px;
   display: inline-block;
+  vertical-align: middle;
   margin-right: 29px;
 }
 
@@ -745,6 +775,7 @@ div.sorting-up-down {
 
 .triangle-up-gray {
   background-position: -200px -250px;
+  cursor: pointer;
 }
 
 .triangle-up-gray:hover {
@@ -757,6 +788,7 @@ div.sorting-up-down {
 
 .triangle-down-gray {
   background-position: -250px -250px;
+  cursor: pointer;
 }
 
 .triangle-down-gray:hover {
@@ -826,6 +858,7 @@ a.hotel-link:active {
 div.mini-block {
   margin-top: -7px;
   display: inline-block;
+  vertical-align: top;
   margin-right: 11px;
   width: 100px;
 }
@@ -876,6 +909,7 @@ div.rating {
 
 div.stars {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 40px;
 }
 
@@ -905,10 +939,10 @@ div.stars {
 footer {
   font-size: 0;
   position: absolute;
+  bottom: 0;
   height: 124px;
   background-color: rgba(255,255,255,0.9);
   width: 1200px;
-  margin-top: -124px;
   z-index: 2;
 }
 
@@ -934,6 +968,7 @@ div.visit a {
 
 div.links-social > div {
   display: inline-block;
+  vertical-align: middle;
   width: 46px;
   height: 48px;
   background-position: -32px -337px;
@@ -955,6 +990,7 @@ div.links-social div:last-child{
 
 div.links-social a {
   display: inline-block;
+  vertical-align: middle;
   width: 46px;
   height: 48px;
 }
@@ -992,6 +1028,7 @@ div.by-html-academy:active {
 
 .by-html-academy a {
   display: inline-block;
+  vertical-align: middle;
   width: 195px;
 	height: 39px;
 }
