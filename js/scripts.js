@@ -1,42 +1,76 @@
 var myPopup = document.querySelector(".hiding-block");
 var btnBrown = document.querySelector(".brown");
-var qtyAd = document.querySelector(".qty-adult").value;
-qtyAd = 2;
-var btnMinAd = document.querySelector(".button-minus-adult");
-var btnPlAd = document.querySelector(".button-plus-adult");
-var qtyCh = document.querySelector(".qty-child").value;
-qtyCh = 0;
-var btnMinCh = document.querySelector(".button-minus-child");
-var btnPlCh = document.querySelector(".button-plus-child");
+var qtyAdult = document.querySelector(".qty-adult").value;
+qtyAdult = 2;
+var btnMinusAdult = document.querySelector(".button-minus-adult");
+var btnPlusAdult = document.querySelector(".button-plus-adult");
+var btnPlusAdultInner = document.querySelector(".qty-adults div.button-minus");
+var btnMinusAdultInner = document.querySelector(".qty-adults div.button-plus");
+var qtyChild = document.querySelector(".qty-child").value;
+qtyChild = 0;
+var btnMinusChild = document.querySelector(".button-minus-child");
+var btnPlusChild = document.querySelector(".button-plus-child");
+var btnPlusChildInner = document.querySelector(".qty-childs div.button-minus");
+var btnMinusChildInner = document.querySelector(".qty-childs div.button-plus");
+
+myPopup.classList.remove("show-me");
 
 btnBrown.addEventListener("click", function() {
   myPopup.classList.toggle("show-me");
 });
 
-btnMinAd.addEventListener("click", function() {
-  if(qtyAd < 99) {
-  qtyAd = qtyAd + 1;
-  document.querySelector(".qty-adult").value = qtyAd;
+btnMinusAdult.addEventListener("click", function() {
+  if(qtyAdult < 99) {
+  qtyAdult = qtyAdult + 1;
+  document.querySelector(".qty-adult").value = qtyAdult;
 }
 });
 
-btnPlAd.addEventListener("click", function() {
-  if(qtyAd > 1) {
-  qtyAd = qtyAd - 1;
-  document.querySelector(".qty-adult").value = qtyAd;
+btnMinusAdultInner.addEventListener("click", function() {
+  if(qtyAdult < 99) {
+  qtyAdult = qtyAdult + 1;
+  document.querySelector(".qty-adult").value = qtyAdult;
 }
 });
 
-btnMinCh.addEventListener("click", function() {
-  if(qtyCh < 99) {
-  qtyCh = qtyCh + 1;
-  document.querySelector(".qty-child").value = qtyCh;
+btnPlusAdult.addEventListener("click", function() {
+  if(qtyAdult > 1) {
+  qtyAdult = qtyAdult - 1;
+  document.querySelector(".qty-adult").value = qtyAdult;
 }
 });
 
-btnPlCh.addEventListener("click", function() {
-  if(qtyCh > 0) {
-  qtyCh = qtyCh - 1;
-  document.querySelector(".qty-child").value = qtyCh;
+btnPlusAdultInner.addEventListener("click", function() {
+  if(qtyAdult > 1) {
+  qtyAdult = qtyAdult - 1;
+  document.querySelector(".qty-adult").value = qtyAdult;
+}
+});
+
+btnMinusChild.addEventListener("click", function() {
+  if(qtyChild < 99) {
+  qtyChild = qtyChild + 1;
+  document.querySelector(".qty-child").value = qtyChild;
+}
+});
+
+btnMinusChildInner.addEventListener("click", function() {
+  if(qtyChild < 99) {
+  qtyChild = qtyChild + 1;
+  document.querySelector(".qty-child").value = qtyChild;
+}
+});
+
+btnPlusChild.addEventListener("click", function() {
+  if(qtyChild > 0) {
+  qtyChild = qtyChild - 1;
+  document.querySelector(".qty-child").value = qtyChild;
+}
+});
+
+btnPlusChildInner.addEventListener("click", function() {
+  if(qtyChild > 0) {
+  qtyChild = qtyChild - 1;
+  document.querySelector(".qty-child").value = qtyChild;
 }
 });
