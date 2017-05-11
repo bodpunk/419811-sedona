@@ -53,7 +53,7 @@ ul.main-nav {
 
 .main-nav li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 20%;
   height: 56px;
   font-size: 14px;
