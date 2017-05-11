@@ -79,6 +79,15 @@ a.logo {
   z-index: 1;
 }
 
+span.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  top: 0px;
+  font-size: 14px;
+  z-index: 1;
+}
+
 li.left {
   float: left;
 }
@@ -498,6 +507,7 @@ div.button-plus,
 div.button-minus {
   background-color: #a9a9a9;
   cursor: pointer;
+  font-size: 0;
 }
 
 button:hover + div.button-plus,
@@ -1008,6 +1018,7 @@ div.links-social a {
   vertical-align: top;
   width: 46px;
   height: 48px;
+  font-size: 0;
 }
 
 div.links-social > div:hover {
@@ -1044,6 +1055,7 @@ div.by-html-academy:active {
 .by-html-academy a {
   width: 100%;
 	height: 100%;
+  font-size: 0;
 }
 
  div.show-me {
