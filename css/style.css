@@ -48,11 +48,12 @@ h2.title {
 
 ul.main-nav {
   padding-left: 0;
+  min-height: 56px;
 }
 
 .main-nav li {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 20%;
   height: 56px;
   font-size: 14px;
@@ -61,8 +62,10 @@ ul.main-nav {
 
 .main-nav a {
   display: inline-block;
-  margin-top: 18px;
-  height: auto;
+  vertical-align: top;
+  padding: 18px 0px;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: #000000;
 }
@@ -316,10 +319,9 @@ div.brown {
   left: 50%;
   margin-left: -285px;
   z-index: 4;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-.brown input {
+.brown button {
   background-color: #766357;
   padding: 0px;
   color: #ffffff;
@@ -328,16 +330,16 @@ div.brown {
   text-transform: uppercase;
   font-size: 21px;
   width: 568px;
-  height: 88px;
+  height: 86px;
   cursor: pointer;
   border: none;
 }
 
-.brown input:hover {
+.brown button:hover {
   background-color: #604e43;
 }
 
-.brown input:active {
+.brown button:active {
   background-color: #503e33;
   color: #706158;
 }
@@ -345,7 +347,7 @@ div.brown {
 div.hiding-block {
   position: absolute;
   background-color: white;
-  bottom: 192px;
+  bottom: 201px;
   padding: 55px;
   min-width: 458px;
   min-height: 285px;
@@ -353,7 +355,8 @@ div.hiding-block {
   margin-left: -285px;
   z-index: 2;
   display: none;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
+          box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 div.form-group-mega {
@@ -411,6 +414,7 @@ span.button-calendar {
   background-position: 0 -400px;
 	width: 22px;
 	height: 22px;
+  font-size: 0;
 }
 
 .date-out span.button-calendar {
@@ -427,7 +431,7 @@ span.button-calendar:active {
 
 div.qty-adults,
 div.qty-childs {
-  height: 38px;
+  min-height: 38px;
   position: relative;
   float: left;
   min-width: 227px;
@@ -441,8 +445,7 @@ div.qty-childs {
 
 div.qty-adults label,
 div.qty-childs label {
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
   padding-top: 10px;
   height: 100%;
 }
@@ -458,7 +461,7 @@ div.qty-childs label {
   text-align: center;
 }
 
-div.clearfix::after {
+.clearfix::after {
   content: "";
   clear: both;
 }
@@ -493,17 +496,18 @@ div.button-plus-v {
 div.button-plus,
 div.button-minus {
   background-color: #a9a9a9;
+  cursor: pointer;
 }
 
-button:hover div.button-plus,
-button:hover div.button-minus,
+button:hover + div.button-plus,
+button:hover + div.button-minus,
 div.button-plus:hover,
 div.button-minus:hover {
   background-color: #000000;
 }
 
-button:active div.button-plus,
-button:active div.button-minus,
+button:active + div.button-plus,
+button:active + div.button-minus,
 div.button-plus:active,
 div.button-minus:active {
   background-color: #81b3d2;
@@ -543,11 +547,11 @@ div.find-it {
 }
 
 div.sort {
-  height: 217px;
+  height: 210px;
   background-color: #42719b;
   background-image: url(../img/mountains-filter.jpg);
   background-position: 0 20%;
-  padding: 0px 73px 0px 61px;
+  padding: 6px 72px 0px 62px;
   margin-top: -6px;
   color: white;
 }
@@ -600,6 +604,14 @@ div.form-group span.check-mark-off {
 
 input.checking[type="checkbox"]:checked + span.check-mark-off {
   background-position: -100px -300px;
+}
+
+input.checking[disabled] + span.check-mark-off {
+  background-position: -150px -350px;
+}
+
+input.checking[disabled]:checked + span.check-mark-off {
+  background-position: -150px -300px;
 }
 
 input.checking[type="checkbox"] {
@@ -730,7 +742,7 @@ ul.sorting {
 .sorting li {
   font-size: 12px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 29px;
 }
 
@@ -771,6 +783,7 @@ div.sorting-up-down {
   margin-left: 13px;
   width: 11px;
   height: 10px;
+  font-size: 0;
 }
 
 .triangle-up-gray {
@@ -911,6 +924,7 @@ div.stars {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 40px;
+  font-size: 0;
 }
 
 .stars-four {
@@ -968,7 +982,7 @@ div.visit a {
 
 div.links-social > div {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 46px;
   height: 48px;
   background-position: -32px -337px;
@@ -990,7 +1004,7 @@ div.links-social div:last-child{
 
 div.links-social a {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 46px;
   height: 48px;
 }
@@ -1027,21 +1041,26 @@ div.by-html-academy:active {
 }
 
 .by-html-academy a {
-  display: inline-block;
-  vertical-align: middle;
-  width: 195px;
-	height: 39px;
+  width: 100%;
+	height: 100%;
 }
 
  div.show-me {
   display: block;
   position: absolute;
   z-index: 2;
-  animation-name: lift-down;
-  animation-duration: 0.5s;
+  -webkit-animation-name: lift-down;
+          animation-name: lift-down;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes lift-down {
+  from {-webkit-transform: translateY(-395px);transform: translateY(-395px);}
+  to {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
 
 @keyframes lift-down {
-  from {transform: translateY(-350px);}
-  to {transform: translateY(0px);}
+  from {-webkit-transform: translateY(-395px);transform: translateY(-395px);}
+  to {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }

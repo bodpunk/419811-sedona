@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Седона — гостиницы</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-mini.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -24,7 +24,7 @@
         <div class="infrastructure">
           <h3 class="title">Инфраструктура:</h3>
           <div class="form-group sorting-form">
-            <label><input type="checkbox" name="infrastructure" class="checking" id="swim"><span class="sprite check-mark-off"></span>
+            <label><input type="checkbox" name="infrastructure" class="checking" id="swim" checked><span class="sprite check-mark-off"></span>
             Бассейн</label>
           </div>
           <div class="form-group sorting-form">
@@ -39,15 +39,15 @@
         <div class="housing-type">
           <h3 class="title">Тип жилья:</h3>
           <div class="form-group sorting-form">
-            <label><input type="checkbox" name="housing-type" class="checking" id="hotel"><span class="sprite check-mark-off"></span>
+            <label><input type="checkbox" name="housing-type" class="checking" id="hotel" checked><span class="sprite check-mark-off"></span>
             Гостиница</label>
           </div>
           <div class="form-group sorting-form">
-            <label><input type="checkbox" name="housing-type" class="checking" id="motel"><span class="sprite check-mark-off"></span>
+            <label><input type="checkbox" name="housing-type" class="checking" id="motel" checked><span class="sprite check-mark-off"></span>
             Мотель</label>
           </div>
           <div class="form-group sorting-form">
-            <label><input type="checkbox" name="housing-type" class="checking" id="apartments"><span class="sprite check-mark-off"></span>
+            <label><input type="checkbox" name="housing-type" class="checking" id="apartments" checked><span class="sprite check-mark-off"></span>
             Апартаменты</label>
           </div>
         </div>
@@ -63,7 +63,7 @@
             <div class="range-element max-slider"></div>
           </div>
           <div class="show">
-            <button type="button">ПОКАЗАТЬ</button>
+            <button>ПОКАЗАТЬ</button>
           </div>
         </div>
       </form>
@@ -78,8 +78,8 @@
             <li><a href="#">По рейтингу</a></li>
           </ul>
           <div class="sorting-up-down clearfix">
-            <div class="triangle-down-gray sorting-down-active sprite"></div>
-            <div class="triangle-up-gray sprite"></div>
+            <div class="triangle-down-gray sorting-down-active sprite">Сортировка вниз</div>
+            <div class="triangle-up-gray sprite">Сортировка вверх</div>
           </div>
         </div>
         <div class="not-a-table">
@@ -99,7 +99,7 @@
               </div>
             </div>
             <div class="rating">
-              <div class="sprite stars stars-four"></div>
+              <div class="sprite stars stars-four">4 звезды</div>
               <div class="value">Рейтинг: 8,5</div>
             </div>
           </div>
@@ -119,7 +119,7 @@
               </div>
             </div>
             <div class="rating">
-              <div class="sprite stars stars-two"></div>
+              <div class="sprite stars stars-two">2 звезды</div>
               <div class="value">Рейтинг: 8,9</div>
             </div>
           </div>
@@ -139,7 +139,7 @@
               </div>
             </div>
             <div class="rating">
-              <div class="sprite stars stars-three"></div>
+              <div class="sprite stars stars-three">3 звезды</div>
               <div class="value">Рейтинг: 9,2</div>
             </div>
           </div>
@@ -169,5 +169,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/scripts-mini.js"></script>
 </body>
 </html>
