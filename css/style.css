@@ -65,7 +65,7 @@ ul.main-nav {
   vertical-align: top;
   padding: 18px 0px;
   width: 100%;
-  height: 100%;
+  height: 30%;
   text-decoration: none;
   color: #000000;
 }
@@ -324,7 +324,7 @@ div.find-hotel {
 
 div.brown {
   position: absolute;
-  bottom: 597px;
+  bottom: -86px;
   left: 50%;
   margin-left: -285px;
   z-index: 4;
@@ -356,7 +356,7 @@ div.brown {
 div.hiding-block {
   position: absolute;
   background-color: white;
-  bottom: 201px;
+  bottom: -457px;
   padding: 55px;
   min-width: 458px;
   min-height: 285px;
@@ -557,6 +557,14 @@ div.find-it {
   color: #88b6d1;
 }
 
+div.brown.with-js {
+  bottom: 597px;
+}
+
+div.hiding-block.with-js {
+  bottom: 201px;
+}
+
 div.sort {
   height: 210px;
   background-color: #42719b;
@@ -596,6 +604,10 @@ form.sort > div:last-child {
   position: relative;
   width: 100%;
   height: 45px;
+}
+
+.sort label {
+  cursor: pointer;
 }
 
 div.form-group.sorting-form input {
@@ -1053,9 +1065,13 @@ div.by-html-academy:active {
 }
 
 .by-html-academy a {
-  width: 100%;
-	height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  width: 195px;
+	height: 23px;
   font-size: 0;
+  cursor: pointer;
+  padding-top: 16px;
 }
 
  div.show-me {
