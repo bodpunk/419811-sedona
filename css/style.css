@@ -405,6 +405,7 @@ input.calendar-input {
 
 .form-group-mega input:focus {
   background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
 }
 
 span.button-calendar {
