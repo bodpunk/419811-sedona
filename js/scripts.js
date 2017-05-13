@@ -1,5 +1,5 @@
-var myPopup = document.querySelector("div.hiding-block");
-var btnBrown = document.querySelector("div.brown");
+var myPopup = document.querySelector(".hiding-block");
+var btnBrown = document.querySelector(".brown");
 
 myPopup.classList.remove("show-me");
 myPopup.classList.add("with-js");

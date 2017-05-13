@@ -12,7 +12,7 @@
     <header class="main-header">
       <span class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип"></span>
       <ul class="main-nav clearfix">
-        <li class="left"><a href="#"><span>Информация</span></a></li>
+        <li class="left"><a href="#">Информация</a></li>
         <li class="left"><a href="#">Фото и видео</a></li>
         <li class="right"><a href="hotels.html">Гостиницы</a></li>
         <li class="right"><a href="#">Карта штата</a></li>
@@ -32,7 +32,7 @@
         <div class="bar-one clearfix">
           <div class="reasons blue">
             <h3 class="title">Настоящий городок</h3>
-            <p> — №1 —</p>
+            <span> — №1 —</span>
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img src="img/reasons-first-bar.jpg" class="bar-pic" width="800" height="256" alt="Beautiful Sedona">
@@ -58,24 +58,24 @@
           <img src="img/reasons-second-bar.jpg" class="bar-pic" width="800" height="256" alt="Beautiful Sedona again">
           <div class="reasons blue">
             <h3 class="title">Там есть<br> мост дьявола</h3>
-            <p> — №2 —</p>
+            <span> — №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <div class="reasons gray clearfix">
           <section>
             <h3 class="title">Небольшая площадь</h3>
-            <p> — №3 —</p>
+            <span> — №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </section>
           <section>
             <h3 class="title">Красивая дорога</h3>
-            <p> — №4 —</p>
+            <span> — №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </section>
           <section>
             <h3 class="title">Мало туристов</h3>
-            <p> — №5 —</p>
+            <span> — №5 —</span>
             <p>Большинство едет в Гранд-Каньон и толпится там</p>
           </section>
         </div>
@@ -84,65 +84,48 @@
         <div class="interested">
           <h2 class="title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="brown" type="button">Поиск гостиницы в Седоне</button>
+          <div class="hiding-block show-me">
+          <form action="#" method="get">
+            <div class="form-group-mega clearfix">
+              <div class="date-in form-group clearfix">
+                <label for="calendar-in">Дата заезда:
+                <input type="text" class="calendar-input" name="calendar-in" id="calendar-in" value="2016-07-01"><span class="sprite button-calendar">Календарь</span></label>
+              </div>
+              <div class="date-out form-group clearfix">
+                <label for="calendar-out">Дата выезда:
+                <input type="text" class="calendar-input" name="calendar-out" id="calendar-out" value="2016-07-15"><span class="sprite button-calendar">Календарь</span></label>
+              </div>
+              <div class="qty-adults form-group clearfix">
+                <label for="adult">Взрослые:</label>
+                <button type="button" class="button-plus-adult"></button><div class="button-plus">Плюс взрослый<div class="button-plus-h"></div><div class="button-plus-v"></div></div>
+                <input type="text" class="qty-adult" name="qty-adult" id="adult" value="2">
+                <button type="button" class="button-minus-adult"></button><div class="button-minus">Минус взрослый</div>
+              </div>
+              <div class="qty-childs form-group clearfix">
+                <label for="child">Дети:</label>
+                <button type="button" class="button-plus-child"></button><div class="button-plus">Плюс ребёнок<div class="button-plus-h"></div><div class="button-plus-v"></div></div>
+                <input type="text" class="qty-child" name="qty-child" id="child" value="0">
+                <button type="button" class="button-minus-child"></button><div class="button-minus">Минус ребёнок</div>
+              </div>
+              </div>
+              <button class="find-it-button">Найти</button>
+            </form>
+            </div>
         </div>
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497603.279555114!2d-111.81321434475477!3d34.98150543752869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494068378639" width="1200" height="593" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="brown">
-          <button type="button">Поиск гостиницы в Седоне</button>
-        </div>
-        <div class="hiding-block show-me">
-        <form action="#" method="get">
-          <div class="form-group-mega clearfix">
-            <div class="date-in form-group clearfix">
-              <label for="calendar-in">Дата заезда:
-              <input type="text" class="calendar-input" name="calendar-in" id="calendar-in" value="2016-07-01"><span class="sprite button-calendar">Календарь</span></label>
-            </div>
-            <div class="date-out form-group clearfix">
-              <label for="calendar-out">Дата выезда:
-              <input type="text" class="calendar-input" name="calendar-out" id="calendar-out" value="2016-07-15"><span class="sprite button-calendar">Календарь</span></label>
-            </div>
-            <div class="qty-adults form-group clearfix">
-              <label for="adult">Взрослые:</label>
-              <button type="button" class="button-plus-adult"></button><div class="button-plus">Плюс взрослый<div class="button-plus-h"></div><div class="button-plus-v"></div></div>
-              <input type="text" class="qty-adult" name="qty-adult" id="adult" value="2">
-              <button type="button" class="button-minus-adult"></button><div class="button-minus">Минус взрослый</div>
-            </div>
-            <div class="qty-childs form-group clearfix">
-              <label for="child">Дети:</label>
-              <button type="button" class="button-plus-child"></button><div class="button-plus">Плюс ребёнок<div class="button-plus-h"></div><div class="button-plus-v"></div></div>
-              <input type="text" class="qty-child" name="qty-child" id="child" value="0">
-              <button type="button" class="button-minus-child"></button><div class="button-minus">Минус ребёнок</div>
-            </div>
-          </div>
-            <div class="find-it">
-              <button class="find-it-button">Найти</button>
-            </div>
-          </form>
-          </div>
       </div>
     </main>
-    <footer class="main-footer">
-      <div class="visit">
-        <a href="#">#visitsedona</a>
+    <footer class="main-footer clearfix">
+      <a class="footer-block visit" href="#">#visitsedona</a>
+      <div class="footer-block links-social">
+        <a href="#" class="sprite social-twitter"></a>
+        <a href="#" class="sprite social-facebook"></a>
+        <a href="#" class="sprite social-yt"></a>
       </div>
-      <div class="links-social">
-        <div class="sprite social-twitter">
-          <a href="#">Мы в twitter</a>
-          <div class="back-social"></div>
-        </div>
-        <div class="sprite social-facebook">
-          <a href="#">Мы в facebook</a>
-          <div class="back-social"></div>
-        </div>
-        <div class="sprite social-yt">
-          <a href="#">Мы на youtube</a>
-          <div class="back-social"></div>
-        </div>
-      </div>
-      <div class="sprite by-html-academy">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
-      </div>
+      <a class="footer-block sprite by-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
     </footer>
   </div>
   <script src="js/scripts-min.js"></script>

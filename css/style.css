@@ -39,61 +39,43 @@ h2.title {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .main-header {
   width: 100%;
   font-size: 0;
   text-align: center;
-  height: 63px;
-}
-
-ul.main-nav {
-  padding-left: 0;
   min-height: 56px;
 }
 
+.main-nav {
+  padding: 0;
+}
+
 .main-nav li {
-  display: inline-block;
-  vertical-align: top;
   width: 20%;
-  height: 56px;
-  font-size: 14px;
-  font-weight: bold;
 }
 
-.main-nav a {
-  display: inline-block;
-  vertical-align: top;
-  padding: 18px 0px;
-  width: 100%;
-  height: 30%;
-  text-decoration: none;
-  color: #000000;
-}
-
-a.logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -69px;
-  top: 0px;
-  font-size: 14px;
-  z-index: 1;
-}
-
-span.logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -69px;
-  top: 0px;
-  font-size: 14px;
-  z-index: 1;
-}
-
-li.left {
+.left {
   float: left;
 }
 
-li.right {
+.right {
   float: right;
+}
+
+.main-nav a {
+  display: block;
+  padding: 18px 0 28px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 
 .main-nav a:hover {
@@ -111,20 +93,22 @@ li.right {
   cursor: pointer;
 }
 
-header::after {
-  content: "";
-  display: table;
-  clear: both;
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  font-size: 14px;
+  z-index: 1;
 }
 
-div.main-pic-block {
+.main-pic-block {
   position: relative;
   width: 1200px;
   height: 512px;
   margin-top: -7px;
 }
 
-img.main-pic {
+.main-pic {
   background-color: #e4f1f9;
   position: absolute;
   left: 0;
@@ -132,7 +116,7 @@ img.main-pic {
 
 .welcome-pic {
   position: absolute;
-  margin-top: 74px;
+  margin-top: 76px;
   left: 50%;
   margin-left: -229px;
   z-index: 1;
@@ -146,60 +130,57 @@ img.main-pic {
   z-index: 1;
 }
 
-.intro {
-  height: 150px;
-}
-
 .intro h3 {
-  width: 440px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 33px;;
-  margin-top: 56px;
+  display: block;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 56px 30px 34px;
   line-height: 1.2;
 }
 
 .intro p {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 0 56px;
   font-weight: normal;
 }
 
 .bar-one {
-  margin-top: 7px;
   background-color: #81b3d2;
-  height: 256px;
+  min-height: 256px;
 }
 
-div.blue {
+.bar-one img {
+  float: right;
+}
+
+.blue {
   float: left;
-  width: 320px;
-  height: 147px;
+  width: 308px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 46px 40px 63px;
+  padding: 46px 46px 0;
 }
 
 .blue .title {
   color: #ffffff;
-  margin-top: 0;
-  margin-left: 80px;
-  margin-bottom: 25px;
+  margin: 0 auto;
   width: 160px;
   line-height: 1;
 }
 
-.blue p {
-  max-width: 308px;
-  font-weight: normal;
-  margin-bottom: 22px;
-  margin-left: 5px;
-  line-height: 1.4;
+.blue span {
+  display: block;
+  padding-top: 27px;
 }
 
-div.white {
+.blue p {
+  font-weight: normal;
+  display: block;
+  padding-top: 27px;
   margin: 0;
-  padding: 0;
-  font-size: 0;
-  height: 330px;
+  line-height: 1.4;
 }
 
 .white section {
@@ -207,9 +188,8 @@ div.white {
   font-size: 14px;
   display: inline-block;
   vertical-align: top;
-  width: 300px;
-  height: 113px;
-  margin: 135px 50px;
+  width: 31%;
+  padding: 105px 1% 70px;
   line-height: 1.4;
 }
 
@@ -217,7 +197,7 @@ div.white {
   position: absolute;
   left: 50%;
   margin-left: -38px;
-  bottom: 118px;
+  bottom: 197px;
 	width: 75px;
 	height: 72px;
   background-position: 0 0;
@@ -227,7 +207,7 @@ div.white {
   position: absolute;
   left: 50%;
   margin-left: -37px;
-  bottom: 118px;
+  bottom: 197px;
   background-position: 0 -100px;
 	width: 74px;
 	height: 70px;
@@ -237,158 +217,161 @@ div.white {
   position: absolute;
   left: 50%;
   margin-left: -32px;
-  bottom: 118px;
+  bottom: 197px;
   background-position: 0 -200px;
 	width: 64px;
 	height: 76px;
 }
 
+.white .title {
+  display: block;
+  width: 100%;
+  margin-top: 53px;
+  margin-bottom: 5px;
+}
+
 .white p {
+  display: block;
   font-weight: normal;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.bar-two {
-  margin-top: -2px;
   background-color: #81b3d2;
-  height: 256px;
 }
 
-.bar-two div {
+.bar-two .blue {
   float: right;
 }
 
-.gray section {
+.bar-two img {
   float: left;
-  width: 262px;
-  height: 265px;
+}
+
+.gray {
   background-color: #eeeeee;
-  color: #000000;
-  padding-left: 69px;
-  padding-right: 69px;
-  position: relative;
-  z-index: 3;
 }
 
-.gray .title {
-  margin-top: 47px;
-  margin-bottom: 26px;
-  padding-left: 52px;
-  padding-right: 53px;
-  line-height: 1;
-}
-
-.gray p {
-  margin-bottom: 21px;
+.gray section {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 31%;
+  padding: 0px 1% 46px;
   line-height: 1.4;
 }
 
-div.go-to-sedona {
+.gray .title {
+  display: block;
+  max-width: 160px;
+  margin: 47px auto 25px;
+  line-height: 1;
+}
+
+.gray span {
+  display: block;
+  width: 100%;
+}
+
+.gray p {
+  display: block;
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  max-width: 275px;
+}
+
+.go-to-sedona {
   position: relative;
 }
 
-div.interested {
-  margin-top: 256px;
+.interested {
+  position: relative;
   padding-bottom: 123px;
   padding-top: 1px;
   position: relative;
   background-color: white;
-  z-index: 3;
 }
 
 .interested .title {
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 52px;
 }
 
 .interested p {
   line-height: 1.6;
 }
 
-div.map {
-  position: relative;
-  z-index: 2;
-  background-color: #f2f1ef;
-  background-image: url(../img/map.jpg);
-}
-
-div.find-hotel {
+.brown {
+  display: block;
   position: absolute;
-  bottom: 204px;
-  left: 50%;
-  width: 568px;
-  height: 481px;
-  margin-left: -285px;
-  background-color: #ffffff;
-  z-index: 2;
-}
-
-div.brown {
-  position: absolute;
-  bottom: -86px;
+  bottom: -688px;
   left: 50%;
   margin-left: -285px;
-  z-index: 4;
-}
-
-.brown button {
   background-color: #766357;
-  padding: 0px;
+  padding: 32px 5px;
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 21px;
   width: 568px;
-  height: 86px;
   cursor: pointer;
   border: none;
+  z-index: 4;
 }
 
-.brown button:hover {
+.brown.with-js {
+  bottom: 0;
+}
+
+.brown:hover {
   background-color: #604e43;
 }
 
-.brown button:active {
+.brown:active {
   background-color: #503e33;
   color: #706158;
 }
 
-div.hiding-block {
+.hiding-block {
   position: absolute;
   background-color: white;
-  bottom: -457px;
+  bottom: -1064px;
   padding: 55px;
-  min-width: 458px;
-  min-height: 285px;
   left: 50%;
   margin-left: -285px;
-  z-index: 2;
   display: none;
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
           box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-div.form-group-mega {
-  padding: 0;
-  min-height: 206px;
+.hiding-block.with-js {
+  bottom: -394px;
+}
+
+.form-group-mega {
+  padding-bottom: 54px;
   font-weight: bold;
 }
 
-.form-group-mega div.form-group {
+.form-group-mega .form-group {
   text-align: left;
 }
 
-div.date-in,
-div.date-out {
-  padding-top: 10px;
-  height: 28px;
+.date-in,
+.date-out {
+  padding-top: 9px;
   margin-bottom: 29px;
 }
 
-input.calendar-input {
+.calendar-input {
   float: right;
-  min-width: 294px;
-  padding-left: 12px;
+  min-width: 291px;
+  padding-left:13px;
   padding-right: 40px;
   height: 38px;
   margin-top: -11px;
@@ -417,7 +400,7 @@ input.calendar-input {
   outline: 2px solid #e5e5e5;
 }
 
-span.button-calendar {
+.button-calendar {
   position: absolute;
   right: 62px;
   top: 62px;
@@ -427,34 +410,34 @@ span.button-calendar {
   font-size: 0;
 }
 
-.date-out span.button-calendar {
+.date-out .button-calendar {
   top: 128px;
 }
 
-span.button-calendar:hover {
+.button-calendar:hover {
   background-position: 0 -300px;
 }
 
-span.button-calendar:active {
+.button-calendar:active {
   background-position: 0 -350px;
 }
 
-div.qty-adults,
-div.qty-childs {
+.qty-adults,
+.qty-childs {
   min-height: 38px;
   position: relative;
   float: left;
   min-width: 227px;
 }
 
-div.qty-childs {
+.qty-childs {
   float: right;
   margin-right: 0px;
   min-width: 180px;
 }
 
-div.qty-adults label,
-div.qty-childs label {
+.qty-adults label,
+.qty-childs label {
   float: left;
   padding-top: 10px;
   height: 100%;
@@ -471,56 +454,51 @@ div.qty-childs label {
   text-align: center;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-}
-
-div.button-minus {
+.button-minus {
   position: absolute;
   background-color: #a9a9a9;
   height: 3px;
   width: 11px;
   right: 89px;
-  bottom: 19px;
+  bottom: 17px;
 }
 
-div.button-plus-h {
+.button-plus-h {
   position: absolute;
   background-color: inherit;
   height: 3px;
   width: 11px;
   right: 14px;
-  bottom: 19px;
+  bottom: 17px;
 }
 
-div.button-plus-v {
+.button-plus-v {
   position: absolute;
   background-color: inherit;
   height: 11px;
   width: 3px;
   right: 18px;
-  bottom: 15px;
+  bottom: 13px;
 }
 
-div.button-plus,
-div.button-minus {
+.button-plus,
+.button-minus {
   background-color: #a9a9a9;
   cursor: pointer;
   font-size: 0;
 }
 
-button:hover + div.button-plus,
-button:hover + div.button-minus,
-div.button-plus:hover,
-div.button-minus:hover {
+button:hover + .button-plus,
+button:hover + .button-minus,
+.button-plus:hover,
+.button-minus:hover {
   background-color: #000000;
 }
 
-button:active + div.button-plus,
-button:active + div.button-minus,
-div.button-plus:active,
-div.button-minus:active {
+button:active + .button-plus,
+button:active + .button-minus,
+.button-plus:active,
+.button-minus:active {
   background-color: #81b3d2;
 }
 
@@ -529,15 +507,9 @@ div.button-minus:active {
   font-size: 0;
 }
 
-div.find-it {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: red;
-}
-
 .find-it-button {
-  width: 459px;
-  height: 59px;
+  width: 458px;
+  padding: 17px;
   font-size: 21px;
   color: #ffffff;
   font-weight: bold;
@@ -557,67 +529,58 @@ div.find-it {
   color: #88b6d1;
 }
 
-div.brown.with-js {
-  bottom: 597px;
+.map {
+  position: relative;
+  z-index: 2;
+  background-color: #f2f1ef;
+  background-image: url(../img/map.jpg);
 }
 
-div.hiding-block.with-js {
-  bottom: 201px;
-}
-
-div.sort {
-  height: 210px;
+.sort {
+  min-height: 151px;
   background-color: #42719b;
   background-image: url(../img/mountains-filter.jpg);
-  background-position: 0 20%;
-  padding: 6px 72px 0px 62px;
-  margin-top: -6px;
+  background-position: 0 30%;
+  padding: 15px 73px 20px;
   color: white;
 }
 
-form.sort > div {
-  padding-left: 11px;
-  height: 176px;
+.sort-block {
+  padding: 0;
   float: left;
-  width: 240px;
+  width: 252px;
   text-align: left;
-  margin-right: 4px;
-  margin-top: 5px;
 }
 
-form.sort h3 {
-  margin-bottom: 29px;
+.sort .title {
+  padding: 13px 0;
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-div.pricing h3 {
-  margin-bottom: 11px;
-}
-
-form.sort > div:last-child {
-  float: right;
-  width: 317px;
-  margin-right: 0px;
-  height: 190px;
-}
-
-.sort div.form-group {
+.sort .form-group {
+  display: block;
   position: relative;
-  width: 100%;
-  height: 45px;
 }
 
 .sort label {
+  display: inline-block;
+  vertical-align: top;
   cursor: pointer;
+  padding: 15px 0;
 }
 
-div.form-group.sorting-form input {
-  margin-right: 25px;
+.checking[type="checkbox"] {
+  position: relative;
+  z-index: -1;
+  margin-right: 24px;
 }
 
-div.form-group span.check-mark-off {
+.form-group .check-mark-off {
   position: absolute;
   left: -2px;
-  top: -2px;
+  top: 12px;
 	width: 24px;
 	height: 24px;
   background-position: -100px -350px;
@@ -625,59 +588,65 @@ div.form-group span.check-mark-off {
   cursor: pointer;
 }
 
-input.checking[type="checkbox"]:checked + span.check-mark-off {
+.checking[type="checkbox"]:checked + .check-mark-off {
   background-position: -100px -300px;
 }
 
-input.checking[disabled] + span.check-mark-off {
+.checking[disabled] + .check-mark-off {
   background-position: -150px -350px;
 }
 
-input.checking[disabled]:checked + span.check-mark-off {
+.checking[disabled]:checked + .check-mark-off {
   background-position: -150px -300px;
 }
 
-input.checking[type="checkbox"] {
-  position: relative;
-  z-index: -1;
+.pricing {
+  float: right;
+  min-width: 316px;
 }
 
-.sort div.pricing {
-  width: 330px;
-}
-
-div.from-to {
+.from-to {
   position: relative;
   border: 2px solid white;
   border-radius: 2%;
-  width: 250px;
-  height: 13px;
-  padding: 8px 0px 11px 65px;
 }
 
-div.from-to:before {
+.from-to:before {
   content: "";
   position: absolute;
   background: white;
   width: 2px;
   height: 22px;
   left: 50%;
+  margin-left: -1px;
   top: 7px;
 }
 
-.from-to label:first-child {
-  margin-right: 88px;
+.from-to label {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 151px;
+  padding: 6px 0;
 }
 
 .from-to input {
-  width: 33px;
+  width: 30px;
   font: inherit;
   color: inherit;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 
-div.slider {
+.price-from input {
+  width: 7px;
+}
+
+.price-to {
+  margin-left: 6px;
+}
+
+.slider {
   position: relative;
   background-color: #928381;
   height: 2px;
@@ -686,13 +655,13 @@ div.slider {
   margin-bottom: 33px;
 }
 
-div.range-slider {
+.range-slider {
   background-color: white;
   height: 2px;
   width: 80%;
 }
 
-div.range-element {
+.range-element {
   background-color: #ababab;
   position: absolute;
   width: 4px;
@@ -703,7 +672,7 @@ div.range-element {
   cursor: pointer;
 }
 
-div.max-slider {
+.max-slider {
   left: 80%;
 }
 
@@ -711,10 +680,14 @@ div.max-slider {
   background-color: #1c4f80;
 }
 
+.show {
+  float: right;
+  width: 325px;
+}
+
 .show button {
-  margin-left: 85px;
-  width: 137px;
-  height: 35px;
+  min-width: 137px;
+  min-height: 35px;
   border: 2px solid white;
   border-radius: 2px;
   font: inherit;
@@ -728,36 +701,23 @@ div.max-slider {
   color: #000000;
 }
 
-.sort h3 {
-  font-size: 16px;
-  color: white;
-}
-
-div.results {
-  height: 664px;
+.before-not-a-table {
+  height: 21px;
   padding-left: 71px;
   padding-right: 71px;
-}
-
-div.before-not-a-table {
-  height: 21px;
   padding-top: 30px;
   padding-bottom: 34px;
-  margin-left: -70px;
-  margin-right: -70px;
-  padding-left: 70px;
-  padding-right: 70px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-div.before-not-a-table div.title {
+.before-not-a-table .title {
   float: left;
   font-size: 21px;
   font-weight: bold;
   margin-right: 49px;
 }
 
-ul.sorting {
+.sorting {
   text-align: left;
   margin-top: 5px;
 }
@@ -795,7 +755,7 @@ a.sorting-active:active {
   text-decoration: none;
 }
 
-div.sorting-up-down {
+.sorting-up-down {
   float: right;
   height: 15px;
   margin-top: -27px;
@@ -841,112 +801,102 @@ div.sorting-up-down {
   background-position: -250px -200px;
 }
 
-div.not-a-table {
-  margin-left: -70px;
-  margin-right: -70px;
-}
-
-div.hotels-bar {
-  height: 150px;
+.hotels-bar {
   display: block;
   border-bottom: 1px solid #e5e5e5;
+  padding: 30px 71px 28px;
 }
 
-.not-a-table h2 {
-  font-size: 21px;
-  margin-top: 15px;
+.not-a-table {
+  font-size: 14px;
   margin-bottom: 17px;
 }
 
-div.hotels-bar > div {
-  padding: 29px 22px 0px 0px;
+.hotels-bar-block {
   float: left;
-}
-
-div.hotels-bar div.rating {
-  float: right;
-  margin-right: 48px;
-  text-align: right;
-}
-
-div.hotels-bar > div:first-child {
-  margin-left: 70px;
-}
-
-.hotels-bar .about-hotel {
-  padding: 10px;
   text-align: left;
 }
 
-a.hotel-link {
-  text-decoration: none;
-  color: #000000;
+.rating {
+  float: right;
 }
 
-a.hotel-link:hover {
+.table-pic {
+  margin-right: 31px;
+}
+
+.hotel-link {
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: -5px;
+}
+
+.hotel-link:hover {
   color: #81b3d2;
 }
 
-a.hotel-link:active {
+.hotel-link:active {
   color: #b2b2b2;
 }
 
-div.mini-block {
-  margin-top: -7px;
+.mini-block {
   display: inline-block;
   vertical-align: top;
-  margin-right: 11px;
-  width: 100px;
+  margin-top: 11px;
+  margin-right: 1px;
 }
 
-div.details-booking,
-div.details-details {
-  margin-top: 23px;
+.details-booking,
+.details-details {
+  display: block;
+  margin-top: 16px;
   text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-div.details-booking a {
+.details-booking {
   background-color: #766357;
   padding: 4px 17px;
+
 }
 
-div.details-booking a:hover {
+.details-booking:hover {
   background-color: #604e43;
 }
 
-div.details-booking a:active {
+.details-booking:active {
   background-color: #503e33;
   color: #766860;
 }
 
-div.details-details a {
+.details-details {
   background-color: #81b3d2;
   padding: 4px 17px;
 }
 
-div.details-details a:hover {
+.details-details:hover {
   background-color: #669ec0;
 }
 
-div.details-details a:active {
+.details-details:active {
   background-color: #5496bd;
   color: #6ca5c6;
 }
 
-.mini-block a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-div.rating {
+.rating {
   text-align: right;
 }
 
-div.stars {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 40px;
+.stars {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 45px;
   font-size: 0;
 }
 
@@ -968,116 +918,101 @@ div.stars {
 	height: 17px;
 }
 
-.rating div.value {
+.rating .value {
   background-color: #f2f2f2;
-  padding: 9px 14px;
+  padding: 6px 14px;
 }
 
-footer {
+.hotels-bar:last-child {
+  padding-bottom: 150px;
+}
+
+.main-footer {
   font-size: 0;
   position: absolute;
   bottom: 0;
-  height: 124px;
   background-color: rgba(255,255,255,0.9);
-  width: 1200px;
+  width: 100%;
   z-index: 2;
 }
 
-footer > div {
-  font-size: 14px;
+.footer-block {
   float: left;
-  height: 50px;
   width: 400px;
-  padding-top: 36px;
-  padding-bottom: 35px;
+  padding: 37px 0 39px;
+  text-align: center;
 }
 
-footer > div:first-child {
-  padding-top: 45px;
-}
-
-div.visit a {
+.visit {
+  display: block;
   font-size: 21px;
   color: black;
   font-weight: bold;
   text-decoration: none;
+  padding-top: 45px;
 }
 
-div.links-social > div {
+.links-social a {
   display: inline-block;
   vertical-align: top;
-  width: 46px;
+  width: 47px;
   height: 48px;
-  background-position: -32px -337px;
   background-color: #81b3d2;
+  margin: 0 3px;
 }
 
-div.links-social div:first-child{
+.social-twitter {
   background-position: -34px -285px;
 }
 
-div.links-social div:nth-child(2) {
-  margin-left: 2px;
-  margin-right: 2px;
+.social-facebook {
+  background-position: -32px -337px;
 }
 
-div.links-social div:last-child{
+.social-yt {
   background-position: -37px -384px;
 }
 
-div.links-social a {
-  display: inline-block;
-  vertical-align: top;
-  width: 46px;
-  height: 48px;
-  font-size: 0;
-}
-
-div.links-social > div:hover {
+.links-social a:hover,
+.links-social a:active {
   background-color: #5496bd;
 }
 
-div:active > div.back-social {
-  position: absolute;
-  top: 36px;
-  width: 45px;
-  height: 47px;
-  background: rgba(84,150,189, 0.5);
+.social-twitter:active {
+  background-position: -184px -285px;
 }
 
-div.by-html-academy {
+.social-facebook:active {
+  background-position: -182px -337px;
+}
+
+.social-yt:active {
+  background-position: -187px -384px;
+}
+
+.by-html-academy {
   display: block;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 41px;
-  margin-left: 100px;
+  height: 39px;
+  width: 195px;
+  margin-left:102px;
 	background-position: -100px 0;
-	width: 195px;
-	height: 39px;
 }
 
-div.by-html-academy:hover {
+.by-html-academy:hover {
   background-position: -100px -50px;
 }
 
-div.by-html-academy:active {
+.by-html-academy:active {
   background-position: -100px -100px;
 }
 
-.by-html-academy a {
-  display: inline-block;
-  vertical-align: top;
-  width: 195px;
-	height: 23px;
-  font-size: 0;
-  cursor: pointer;
-  padding-top: 16px;
-}
-
- div.show-me {
+.show-me {
   display: block;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   -webkit-animation-name: lift-down;
           animation-name: lift-down;
   -webkit-animation-duration: 0.5s;

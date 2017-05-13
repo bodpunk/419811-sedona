@@ -20,8 +20,8 @@
     </header>
     <main>
       <div class="sort">
-      <form class="sort clearfix" action="#" method="post">
-        <div class="infrastructure">
+      <form class="clearfix" action="#" method="post">
+        <div class="sort-block infrastructure">
           <h3 class="title">Инфраструктура:</h3>
           <div class="form-group sorting-form">
             <label><input type="checkbox" name="infrastructure" class="checking" id="swim" checked><span class="sprite check-mark-off"></span>
@@ -36,7 +36,7 @@
             Wi-Fi</label>
           </div>
         </div>
-        <div class="housing-type">
+        <div class="sort-block housing-type">
           <h3 class="title">Тип жилья:</h3>
           <div class="form-group sorting-form">
             <label><input type="checkbox" name="housing-type" class="checking" id="hotel" checked><span class="sprite check-mark-off"></span>
@@ -51,20 +51,20 @@
             Апартаменты</label>
           </div>
         </div>
-        <div class="pricing">
+        <div class="sort-block pricing">
           <h3 class="title">Стоимость в сутки (Р):</h3>
           <div class="from-to">
-            <label for="price-from">ОТ <input type="text" name="price-from" id="price-from" value="0"></label>
-            <label for="price-to">ДО <input type="text" name="price-to" id="price-to" value="3000"></label>
+            <label class="price-from" for="price-from">ОТ <input type="text" name="price-from" id="price-from" value="0"></label>
+            <label class="price-to" for="price-to">ДО <input type="text" name="price-to" id="price-to" value="3000"></label>
           </div>
           <div class="slider">
             <div class="range-slider"></div>
             <div class="range-element min-slider"></div>
             <div class="range-element max-slider"></div>
           </div>
-          <div class="show">
-            <button>ПОКАЗАТЬ</button>
-          </div>
+        </div>
+        <div class="show">
+          <button>ПОКАЗАТЬ</button>
         </div>
       </form>
       </div>
@@ -84,61 +84,61 @@
         </div>
         <div class="not-a-table">
           <div class="hotels-bar clearfix">
-            <div class="table-pic">
+            <div class="hotels-bar-block table-pic">
               <img src="img/amara-resort&spa.jpg" width="135" height="90" alt="amara-pic">
             </div>
-            <div class="about-hotel">
-              <h2 class="title"><a href="#" class="hotel-link">Amara Resort & Spa</a></h2>
+            <div class="hotels-bar-block about-hotel">
+              <a href="#" class="hotel-link">Amara Resort & Spa</a>
               <div class="mini-block">
                 <div class="details-hotel">Гостиница</div>
-                <div class="details-details"><a href="#">Подробнее</a></div>
+                <a class="details-details" href="#">Подробнее</a>
               </div>
               <div class="mini-block">
                 <div class="details-price">от 3500 р.</div>
-                <div class="details-booking"><a href="#">Забронировать</a></div>
+                <a class="details-booking" href="#">Забронировать</a>
               </div>
             </div>
-            <div class="rating">
+            <div class="hotels-bar-block rating">
               <div class="sprite stars stars-four">4 звезды</div>
               <div class="value">Рейтинг: 8,5</div>
             </div>
           </div>
-          <div class="hotels-bar">
-            <div class="table-pic">
+          <div class="hotels-bar clearfix">
+            <div class="hotels-bar-block table-pic">
               <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="desert-pic">
             </div>
-            <div class="about-hotel">
-              <h2 class="title"><a href="#" class="hotel-link">Desert Quail Inn</a></h2>
+            <div class="hotels-bar-block about-hotel">
+              <a href="#" class="hotel-link">Desert Quail Inn</a>
               <div class="mini-block">
                 <div class="details-hotel">Мотель</div>
-                <div class="details-details"><a href="#">Подробнее</a></div>
+                <a class="details-details" href="#">Подробнее</a>
               </div>
               <div class="mini-block">
                 <div class="details-price">от 2000 р.</div>
-                <div class="details-booking"><a href="#">Забронировать</a></div>
+                <a class="details-booking" href="#">Забронировать</a>
               </div>
             </div>
-            <div class="rating">
+            <div class="hotels-bar-block rating">
               <div class="sprite stars stars-two">2 звезды</div>
               <div class="value">Рейтинг: 8,9</div>
             </div>
           </div>
-          <div class="hotels-bar">
-            <div class="table-pic">
+          <div class="hotels-bar clearfix">
+            <div class="hotels-bar-block table-pic">
               <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="villas-pic">
             </div>
-            <div class="about-hotel">
-              <h2 class="title"><a href="#" class="hotel-link">Villas at Poco Diablo</a></h2>
+            <div class="hotels-bar-block about-hotel">
+              <a href="#" class="hotel-link">Villas at Poco Diablo</a>
               <div class="mini-block">
                 <div class=details-hotel>Апартаменты</div>
-                <div class="details-details"><a href="#">Подробнее</a></div>
+                <a class="details-details" href="#">Подробнее</a>
               </div>
               <div class="mini-block">
                 <div class="details-price">От 4000 р.</div>
-                <div class="details-booking"><a href="#">Забронировать</a></div>
+                <a class="details-booking" href="#">Забронировать</a>
               </div>
             </div>
-            <div class="rating">
+            <div class="hotels-bar-block rating">
               <div class="sprite stars stars-three">3 звезды</div>
               <div class="value">Рейтинг: 9,2</div>
             </div>
@@ -147,26 +147,13 @@
       </div>
     </main>
     <footer class="main-footer clearfix">
-      <div class="visit">
-        <a href="#">#visitsedona</a>
+      <a class="footer-block visit" href="#">#visitsedona</a>
+      <div class="footer-block links-social">
+        <a href="#" class="sprite social-twitter"></a>
+        <a href="#" class="sprite social-facebook"></a>
+        <a href="#" class="sprite social-yt"></a>
       </div>
-      <div class="links-social">
-        <div class="sprite social-twitter">
-          <a href="#"></a>
-          <div class="back-social"></div>
-        </div>
-        <div class="sprite social-facebook">
-          <a href="#"></a>
-          <div class="back-social"></div>
-        </div>
-        <div class="sprite social-yt">
-          <a href="#"></a>
-          <div class="back-social"></div>
-        </div>
-      </div>
-      <div class="sprite by-html-academy">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
-      </div>
+      <a class="footer-block sprite by-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
     </footer>
   </div>
   <script src="js/scripts-min.js"></script>
