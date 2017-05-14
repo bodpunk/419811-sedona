@@ -69,9 +69,9 @@ h2.title {
 }
 
 .main-nav a {
-  display: block;
-  padding: 18px 0;
-  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 18px 0 20px;
   width: 100%;
   font-size: 14px;
   font-weight: bold;
@@ -106,7 +106,6 @@ h2.title {
   position: relative;
   width: 1200px;
   height: 512px;
-  margin-top: -7px;
 }
 
 .main-pic {
@@ -161,25 +160,31 @@ h2.title {
   width: 308px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 46px 46px 0;
+  padding: 41px 46px 0;
+  text-align: center;
 }
 
 .blue .title {
+  display: inline-block;
+  vertical-align: top;
   color: #ffffff;
   margin: 0 auto;
   width: 160px;
   line-height: 1;
+  padding: 5px 50px;
 }
 
 .blue span {
-  display: block;
-  padding-top: 26px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 21px 20px 10px;
 }
 
 .blue p {
   font-weight: normal;
-  display: block;
-  padding-top: 25px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 0;
   margin: 0;
   line-height: 1.4;
 }
@@ -189,7 +194,8 @@ h2.title {
   font-size: 14px;
   display: inline-block;
   vertical-align: top;
-  padding: 55px 4% 70px;
+  text-align: center;
+  padding: 55px 53px 70px;
   line-height: 1.4;
 }
 
@@ -225,18 +231,13 @@ h2.title {
 
 .white .title {
   display: block;
-  max-width: 200px;
-  margin-top: 103px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 100px;
 }
 
 .white p {
-  display: block;
   font-weight: normal;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 290px;
+  margin-top: 0px;
 }
 
 .bar-two {
@@ -259,14 +260,14 @@ h2.title {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  padding: 10px 5% 46px;
+  padding: 10px 60px 46px;
   line-height: 1.4;
 }
 
 .gray .title {
   display: block;
   max-width: 160px;
-  margin: 36px auto 25px;
+  margin: 37px auto 25px;
   line-height: 1;
 }
 
@@ -278,7 +279,6 @@ h2.title {
 }
 
 .gray p {
-  display: block;
   margin-top: 22px;
   margin-left: auto;
   margin-right: auto;
@@ -301,20 +301,16 @@ h2.title {
 }
 
 .brown {
-  display: block;
-  position: relative;
-  left: 50%;
-  margin-left: -285px;
-  margin-top: 49px;
+  display: inline-block;
+  margin-top: 37px;
   margin-bottom: 396px;
   background-color: #766357;
-  padding: 32px 5px;
+  padding: 31px 139px;
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 21px;
-  width: 568px;
   cursor: pointer;
   border: none;
   z-index: 4;
@@ -339,7 +335,7 @@ h2.title {
   bottom: -395px;
   padding: 55px;
   left: 50%;
-  margin-left: -285px;
+  margin-left: -284px;
   display: none;
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
           box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -500,8 +496,8 @@ button:active + .button-minus,
 }
 
 .find-it-button {
-  width: 458px;
-  padding: 17px;
+  display: inline-block;
+  padding: 17px 196px;
   font-size: 21px;
   color: #ffffff;
   font-weight: bold;
@@ -529,7 +525,6 @@ button:active + .button-minus,
 }
 
 .sort {
-  min-height: 151px;
   background-color: #42719b;
   background-image: url(../img/mountains-filter.jpg);
   background-position: 0 30%;
@@ -560,18 +555,18 @@ button:active + .button-minus,
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  padding: 15px 0;
+  padding: 15px 13px;
 }
 
 .checking[type="checkbox"] {
   position: relative;
   z-index: -1;
-  margin-right: 24px;
+  margin-right: 12px;
 }
 
 .form-group .check-mark-off {
   position: absolute;
-  left: -2px;
+  left: 0;
   top: 12px;
 	width: 24px;
 	height: 24px;
@@ -674,12 +669,13 @@ button:active + .button-minus,
 
 .show {
   float: right;
-  width: 325px;
+  padding: 0 95px;
 }
 
 .show button {
-  min-width: 137px;
-  min-height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 33px;
   border: 2px solid white;
   border-radius: 2px;
   font: inherit;
@@ -694,10 +690,7 @@ button:active + .button-minus,
 }
 
 .before-not-a-table {
-  padding-left: 71px;
-  padding-right: 71px;
-  padding-top: 31px;
-  padding-bottom: 19px;
+  padding: 30px 71px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -716,6 +709,7 @@ button:active + .button-minus,
   float: left;
   vertical-align: top;
   margin-top: 5px;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
@@ -723,7 +717,6 @@ button:active + .button-minus,
   font-size: 12px;
   display: inline-block;
   vertical-align: top;
-  max-width: 80px;
   margin-right: 29px;
 }
 
@@ -799,20 +792,21 @@ a.sorting-active:active {
   background-position: -250px -200px;
 }
 
+.not-a-table {
+  font-size: 0;
+  margin-bottom: 17px;
+}
+
 .hotels-bar {
   display: block;
   border-bottom: 1px solid #e5e5e5;
-  padding: 30px 71px 28px;
-}
-
-.not-a-table {
-  font-size: 14px;
-  margin-bottom: 17px;
+  padding: 30px 71px 29px;
 }
 
 .hotels-bar-block {
   float: left;
   text-align: left;
+  font-size: 0;
 }
 
 .rating {
@@ -820,6 +814,8 @@ a.sorting-active:active {
 }
 
 .table-pic {
+  display: block;
+  font-size: 0;
   margin-right: 31px;
 }
 
@@ -827,10 +823,10 @@ a.sorting-active:active {
   display: block;
   text-decoration: none;
   font-size: 21px;
+  line-height: 0.8;
   font-weight: bold;
   color: #000000;
   max-width: 260px;
-  margin-top: -5px;
 }
 
 .hotel-link:hover {
@@ -844,30 +840,31 @@ a.sorting-active:active {
 .mini-block {
   display: inline-block;
   vertical-align: top;
-  margin-top: 11px;
-  margin-right: 1px;
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .details-hotel,
 .details-price {
-  max-width: 160px;
+  display: block;
+  font-size: 14px;
 }
 
 .details-booking,
 .details-details {
-  display: block;
+  display: inline-block;
   margin-top: 16px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.4;
-  max-width: 160px;
+  padding: 4px 17px;
 }
 
 .details-booking {
   background-color: #766357;
-  padding: 4px 17px;
 }
 
 .details-booking:hover {
@@ -881,7 +878,6 @@ a.sorting-active:active {
 
 .details-details {
   background-color: #81b3d2;
-  padding: 4px 17px;
 }
 
 .details-details:hover {
@@ -926,10 +922,11 @@ a.sorting-active:active {
   background-color: #f2f2f2;
   padding: 6px 14px;
   max-width: 160px;
+  font-size: 14px;
 }
 
 .hotels-bar:last-child {
-  padding-bottom: 150px;
+  padding-bottom: 155px;
 }
 
 .main-footer {
