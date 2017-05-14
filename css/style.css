@@ -70,7 +70,8 @@ h2.title {
 
 .main-nav a {
   display: block;
-  padding: 18px 0 28px;
+  padding: 18px 0;
+  margin-bottom: 10px;
   width: 100%;
   font-size: 14px;
   font-weight: bold;
@@ -172,24 +173,23 @@ h2.title {
 
 .blue span {
   display: block;
-  padding-top: 27px;
+  padding-top: 26px;
 }
 
 .blue p {
   font-weight: normal;
   display: block;
-  padding-top: 27px;
+  padding-top: 25px;
   margin: 0;
   line-height: 1.4;
 }
 
-.white section {
+.white .reasons-partition {
   position: relative;
   font-size: 14px;
   display: inline-block;
   vertical-align: top;
-  width: 31%;
-  padding: 105px 1% 70px;
+  padding: 55px 4% 70px;
   line-height: 1.4;
 }
 
@@ -197,7 +197,7 @@ h2.title {
   position: absolute;
   left: 50%;
   margin-left: -38px;
-  bottom: 197px;
+  top: 60px;
 	width: 75px;
 	height: 72px;
   background-position: 0 0;
@@ -207,7 +207,7 @@ h2.title {
   position: absolute;
   left: 50%;
   margin-left: -37px;
-  bottom: 197px;
+  top: 60px;
   background-position: 0 -100px;
 	width: 74px;
 	height: 70px;
@@ -217,7 +217,7 @@ h2.title {
   position: absolute;
   left: 50%;
   margin-left: -32px;
-  bottom: 197px;
+  top: 57px;
   background-position: 0 -200px;
 	width: 64px;
 	height: 76px;
@@ -225,9 +225,10 @@ h2.title {
 
 .white .title {
   display: block;
-  width: 100%;
-  margin-top: 53px;
-  margin-bottom: 5px;
+  max-width: 200px;
+  margin-top: 103px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .white p {
@@ -238,7 +239,7 @@ h2.title {
   margin-right: auto;
 }
 
-div.bar-two {
+.bar-two {
   background-color: #81b3d2;
 }
 
@@ -254,25 +255,26 @@ div.bar-two {
   background-color: #eeeeee;
 }
 
-.gray section {
+.gray .reasons-partition {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  width: 31%;
-  padding: 0px 1% 46px;
+  padding: 10px 5% 46px;
   line-height: 1.4;
 }
 
 .gray .title {
   display: block;
   max-width: 160px;
-  margin: 47px auto 25px;
+  margin: 36px auto 25px;
   line-height: 1;
 }
 
 .gray span {
   display: block;
-  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gray p {
@@ -284,14 +286,7 @@ div.bar-two {
   max-width: 275px;
 }
 
-.go-to-sedona {
-  position: relative;
-}
-
 .interested {
-  position: relative;
-  padding-bottom: 123px;
-  padding-top: 1px;
   position: relative;
   background-color: white;
 }
@@ -307,10 +302,11 @@ div.bar-two {
 
 .brown {
   display: block;
-  position: absolute;
-  bottom: -688px;
+  position: relative;
   left: 50%;
   margin-left: -285px;
+  margin-top: 49px;
+  margin-bottom: 396px;
   background-color: #766357;
   padding: 32px 5px;
   color: #ffffff;
@@ -325,7 +321,7 @@ div.bar-two {
 }
 
 .brown.with-js {
-  bottom: 0;
+  margin-bottom: 0;
 }
 
 .brown:hover {
@@ -340,17 +336,13 @@ div.bar-two {
 .hiding-block {
   position: absolute;
   background-color: white;
-  bottom: -1064px;
+  bottom: -395px;
   padding: 55px;
   left: 50%;
   margin-left: -285px;
   display: none;
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
           box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-.hiding-block.with-js {
-  bottom: -394px;
 }
 
 .form-group-mega {
@@ -702,30 +694,36 @@ button:active + .button-minus,
 }
 
 .before-not-a-table {
-  height: 21px;
   padding-left: 71px;
   padding-right: 71px;
-  padding-top: 30px;
-  padding-bottom: 34px;
+  padding-top: 31px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .before-not-a-table .title {
   float: left;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 130px;
   font-size: 21px;
   font-weight: bold;
   margin-right: 49px;
 }
 
 .sorting {
-  text-align: left;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
   margin-top: 5px;
+  padding-left: 0;
 }
 
 .sorting li {
   font-size: 12px;
   display: inline-block;
   vertical-align: top;
+  max-width: 80px;
   margin-right: 29px;
 }
 
@@ -758,10 +756,10 @@ a.sorting-active:active {
 .sorting-up-down {
   float: right;
   height: 15px;
-  margin-top: -27px;
+  margin-top: 6px;
 }
 
-.sorting-up-down div {
+.sorting-triangle {
   float: right;
   margin-left: 13px;
   width: 11px;
@@ -831,6 +829,7 @@ a.sorting-active:active {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
+  max-width: 260px;
   margin-top: -5px;
 }
 
@@ -849,6 +848,11 @@ a.sorting-active:active {
   margin-right: 1px;
 }
 
+.details-hotel,
+.details-price {
+  max-width: 160px;
+}
+
 .details-booking,
 .details-details {
   display: block;
@@ -858,12 +862,12 @@ a.sorting-active:active {
   color: #ffffff;
   font-weight: bold;
   line-height: 1.4;
+  max-width: 160px;
 }
 
 .details-booking {
   background-color: #766357;
   padding: 4px 17px;
-
 }
 
 .details-booking:hover {
@@ -921,6 +925,7 @@ a.sorting-active:active {
 .rating .value {
   background-color: #f2f2f2;
   padding: 6px 14px;
+  max-width: 160px;
 }
 
 .hotels-bar:last-child {
@@ -945,14 +950,16 @@ a.sorting-active:active {
 
 .visit {
   display: block;
+  width: 200px;
+  margin: 30px 100px;
+  padding: 15px 0;
   font-size: 21px;
   color: black;
   font-weight: bold;
   text-decoration: none;
-  padding-top: 45px;
 }
 
-.links-social a {
+.social-icon {
   display: inline-block;
   vertical-align: top;
   width: 47px;
@@ -973,8 +980,8 @@ a.sorting-active:active {
   background-position: -37px -384px;
 }
 
-.links-social a:hover,
-.links-social a:active {
+.social-icon:hover,
+.social-icon:active {
   background-color: #5496bd;
 }
 
@@ -1020,11 +1027,11 @@ a.sorting-active:active {
 }
 
 @-webkit-keyframes lift-down {
-  from {-webkit-transform: translateY(-395px);transform: translateY(-395px);}
+  from {-webkit-transform: translateY(695px);transform: translateY(695px);}
   to {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
 
 @keyframes lift-down {
-  from {-webkit-transform: translateY(-395px);transform: translateY(-395px);}
+  from {-webkit-transform: translateY(695px);transform: translateY(695px);}
   to {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
