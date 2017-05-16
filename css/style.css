@@ -148,20 +148,21 @@ h2.title {
   font-weight: normal;
 }
 
+.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .bar-pic {
-  float: right;
   background-color: #81b3d2;
-  width: 800px;
   height: auto;
 }
 
-.bar-pic img {
-  width: 800px;
-  height: 100%;
-}
-
 .blue {
-  float: left;
   width: 308px;
   background-color: #81b3d2;
   color: #ffffff;
@@ -243,15 +244,6 @@ h2.title {
   font-weight: normal;
   max-width: 290px;
   margin-top: 0px;
-}
-
-.bar-two .blue {
-  float: right;
-}
-
-.bar-two img {
-  float: left;
-  background-color: #81b3d2;
 }
 
 .gray {
